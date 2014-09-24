@@ -7,6 +7,7 @@ public class recipeList {
         System.out.println("Recipe App");
         Ingredient ingredient = new Ingredient();
         System.out.println(ingredient.printIt());
+        
 
     }
 
