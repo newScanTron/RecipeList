@@ -1,0 +1,106 @@
+/**
+ * Created by Spencer on 9/22/2014.
+ */
+
+import java.util.List;
+import java.util.Date;
+import java.util.Iterator;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class DBOps {
+
+    // This needs to go inside our main
+    private static SessionFactory factory;
+    public static void main(String[] args) {
+    try{
+        factory = new Configuration().configure().buildSessionFactory();
+    }catch (Throwable ex) {
+        System.err.println("Failed to create sessionFactory object." + ex);
+        throw new ExceptionInInitializerError(ex);
+    }
+    }
+
+    //Method to create a recipe in the database
+    public Integer addRecipe(String name, String ingredients, string tags){
+        Session session = factory.openSession();
+        Transaction dbconn = null;
+        Integer recipeID = null;
+        try{
+            dbconn = session.beginTransaction();
+            Recipe recipe = new Recipe();
+            recipeID = (Integer) session.save(recipe);
+            dbconn.commit();
+
+        }catch (HibernateException e) {
+            if (dbconn != null) dbconn.rollback();
+                e.printStackTrace();
+        }finally {
+            session.close();
+        }
+        return recipeID;
+    }
+
+    //Method to read all the recipes
+    public void listRecipes(){
+        Session session = factory.openSession();
+        Transaction dbconn = null;
+        try{
+            dbconn = session.beginTransaction();
+            List recipes = session.createQuery("FROM Recipe").list();
+            for (Iterator iterator = recipes.iterator(); iterator.hasNext();){
+                Recipe recipe = (Recipe) iterator.next();
+                    //set attributes here like name, ingredients, etc.
+            }
+        dbconn.commit();
+
+        }catch (HibernateException e) {
+            if (dbconn != null) dbconn.rollback();
+                e.printStackTrace();
+        }finally {
+            session.close();
+        }
+    }
+
+    // Method to update a recipe
+    // Make sure to put all of your attributes as parameters
+    public void updateRecipe(Integer RecipeID){
+        Session session = factory.openSession();
+        Transaction dbconn = null;
+        try{
+            dbconn = session.beginTransaction();
+            Recipe recipe = (Recipe)session.get(Recipe.class, RecipeID);
+            //update attributes here
+            session.update(recipe);
+            dbconn.commit();
+
+        }catch (HibernateException e) {
+            if (dbconn != null) dbconn.rollback();
+                e.printStackTrace();
+        }finally {
+            session.close();
+        }
+    }
+
+    // Method to delete a recipe
+    public void deleteRecipe(Integer RecipeID){
+        Session session = factory.openSession();
+        Transaction dbconn = null;
+        try{
+            dbconn = session.beginTransaction();
+            Recipe recipe = (Recipe)session.get(Recipe.class, RecipeID);
+            session.delete(recipe);
+            dbconn.commit();
+
+        }catch (HibernateException e) {
+            if (dbconn != null) dbconn.rollback();
+                e.printStackTrace();
+        }finally {
+            session.close();
+        }
+    }
+}
