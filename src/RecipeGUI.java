@@ -1,9 +1,14 @@
-import java.awt.*;
+import com.intellij.uiDesigner.core.GridConstraints;
+import com.intellij.uiDesigner.core.GridLayoutManager;
+
 import javax.swing.*;
-import com.intellij.uiDesigner.core.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class RecipeGUI extends JPanel{
-
+    //making a instance of the controller class to do stuff
+    Controller controller = new Controller();
 	public RecipeGUI() {
 		initComponents();
 		add(panel1);
@@ -19,10 +24,33 @@ public class RecipeGUI extends JPanel{
 
 		panel1 = new JPanel();
 		toolPanel = new JPanel();
-		addButton = new JButton();
-		editButton = new JButton();
+		//button action,  a place for buttons to have actions listented to and them
+        //call the appropriate controller class method
+        addButton = new JButton();
+		addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("what up know");
+                controller.addRecipe();
+            }
+        });
+        editButton = new JButton();
+        editButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("edit that shiiit");
+                controller.editRecipe();
+            }
+        });
 		deleteButton = new JButton();
-		searchField = new JTextField();
+        deleteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("dellete biatch");
+                controller.delRecipe();
+            }
+        });
+        searchField = new JTextField();
 		listPane = new JScrollPane();
 		recipeList = new JList<>();
 		dataPane = new JScrollPane();

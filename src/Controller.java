@@ -1,7 +1,6 @@
 /**
  * Created by newScanTron on 9/24/2014.
  */
-
 public class Controller {
     public static void Controller()
     {
@@ -19,9 +18,9 @@ public class Controller {
         System.out.println("im searching for, " + searchWord);
     }
     //addRecipe method pretty standard
-    public void addRecipe() {
+    public Recipe addRecipe() {
         System.out.println("we just added a recipe");
-
+        return null;
     }
     //method to edit current recipe
     public void editRecipe()

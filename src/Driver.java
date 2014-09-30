@@ -1,9 +1,6 @@
-import java.awt.BorderLayout;
-import java.awt.Component;
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 
 public class Driver {
