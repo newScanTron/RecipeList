@@ -11,6 +11,11 @@ public class Recipe {
     public String[] directions;
     public ArrayList<String> tags = new ArrayList<String>();
 
+    Recipe (String _name) {
+        name = _name;
+
+    }
+
     Recipe (int _id, String _name, Ingredient[] _ingredients, String[] _directions, ArrayList<String> _tags) {
         id = _id;
         name = _name;
@@ -55,6 +60,7 @@ public class Recipe {
             print = print.concat("\t" + tags.get(i) + "\n");
         }
 
-        return print;
+        //return print;
+        return name;
     }
 }

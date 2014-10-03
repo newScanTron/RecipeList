@@ -18,18 +18,46 @@ public class Controller {
         System.out.println("im searching for, " + searchWord);
     }
     //addRecipe method pretty standard
-    public Recipe addRecipe() {
+
+    public Recipe addRecipe(Recipe newRecipe) {
         System.out.println("we just added a recipe");
+
+        //@TODO: Add recipe to database
+
         return null;
     }
     //method to edit current recipe
-    public void editRecipe()
+    public void editRecipe(String oldRecipeName, Recipe newRecipe)
     {
-        System.out.println("we edited the recipe");
+        System.out.println("We edited the recipe ");
+        delRecipe(findByName(oldRecipeName)); // Remove original
+        addRecipe(newRecipe);   // Add modified original
 
     }
     //method to delete recipe
-    public void delRecipe() {
+    public void delRecipe(Recipe deleteRecipe) {
+
+        //@TODO: Remove recipe from database
+
         System.out.println("recipe deleted");
+    }
+
+    public String[] searchRecipe(String searchInput) {
+
+        //@TODO: Search Function
+        // Go through all recipes
+        // Find if recipe's name, tags, or ingredients include search input
+        // If so, add recipe to results list
+
+        String[] results = new String[0];
+        return results;
+
+    }
+
+    public Recipe findByName(String name) {
+
+        //@TODO: Search for recipe with exact name match
+
+        return new Recipe("test: findByName()");
     }
 }

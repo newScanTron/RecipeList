@@ -5,6 +5,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import java.util.zip.DeflaterOutputStream;
 
 public class RecipeGUI extends JPanel{
     //making a instance of the controller class to do stuff
@@ -17,11 +20,55 @@ public class RecipeGUI extends JPanel{
 		// TODO: add custom component creation code here
 	}
 
+    private void updateList(String[] newList) {
+        //recipeList
+
+    }
+
 	private void initComponents() {
 		// JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
 		// Generated using JFormDesigner Evaluation license - Adam Clemons
 		createUIComponents();
 
+
+        listModel = new DefaultListModel<String>() {
+            Recipe[] recipes = {
+                    new Recipe("test1"),
+                    new Recipe("test2"),
+                    new Recipe("test3"),
+                    new Recipe("test4"),
+            };
+            String[] values = {
+                    recipes[0].name,
+                    recipes[1].name,
+                    recipes[2].name,
+                    recipes[3].name
+            };
+
+            public void updateNames() {
+                values = new String[recipes.length];
+                for(int i = 0; i < recipes.length; i++) {
+                    values[i] = recipes[i].name;
+                }
+            }
+            @Override
+            public int getSize() { return values.length; }
+            @Override
+            public String getElementAt(int i) { return values[i]; }
+            @Override
+            public void removeElementAt(int i) {
+                Recipe[] newRecipes = new Recipe[values.length-1];
+
+                for(int a = 0; a < i; a++){
+                    newRecipes[a] = recipes[a];
+                }
+                for(int a = i; a < recipes.length-1; a++){
+                    newRecipes[a] = recipes[a+1];
+                }
+                recipes = newRecipes;
+                updateNames();
+            }
+        }; // Logic for displaying the names in the list model
 		panel1 = new JPanel();
 		toolPanel = new JPanel();
 		//button action,  a place for buttons to have actions listented to and them
@@ -30,27 +77,65 @@ public class RecipeGUI extends JPanel{
 		addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("what up know");
-                controller.addRecipe();
+                System.out.println("Adding Recipe...");
+                Recipe newRecipe = new Recipe("New Recipe from window");
+
+                //@TODO: Set up new window that allows user input to create new recipe
+
+                controller.addRecipe(newRecipe);
             }
         });
         editButton = new JButton();
         editButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("edit that shiiit");
-                controller.editRecipe();
+                System.out.println("Editing Recipe...");
+                Recipe oldRecipe = new Recipe("This is the original recipe");
+                Recipe newRecipe = new Recipe("This is the new recipe");
+
+                //@TODO: Same as add recipe, but here we need to automatically populate the new window with data from original recipe
+
+                controller.editRecipe(oldRecipe.name,newRecipe);
             }
         });
 		deleteButton = new JButton();
         deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("dellete biatch");
-                controller.delRecipe();
+                String deleteName = recipeList.getSelectedValue();
+                int deleteIndex = recipeList.getSelectedIndex();
+
+                listModel.removeElementAt(deleteIndex);     // Removes element from list
+
+                controller.delRecipe(controller.findByName(deleteName));  // Deletes recipe from database
+
+                recipeList.updateUI();  // Refreshes UI
+
+                System.out.println("dellete biatch: " + deleteName);
             }
         });
         searchField = new JTextField();
+        searchField.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                searchField.setText("");
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                searchField.setText("Search for a Recipe by name, tags, or ingredients");
+            }
+        });
+        searchField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String[] results = controller.searchRecipe(searchField.getText());
+
+
+
+            }
+        });
 		listPane = new JScrollPane();
 		recipeList = new JList<>();
 		dataPane = new JScrollPane();
@@ -113,7 +198,7 @@ public class RecipeGUI extends JPanel{
 					null, new Dimension(30, 30), null));
 
 				//---- searchField ----
-				searchField.setText("Search for a Recipe...");
+				searchField.setText("Search for a Recipe by name, tags, or ingredients");
 				searchField.setBorder(null);
 				searchField.setPreferredSize(new Dimension(200, 14));
 				searchField.setHorizontalAlignment(SwingConstants.TRAILING);
@@ -136,18 +221,7 @@ public class RecipeGUI extends JPanel{
 				listPane.setBorder(null);
 
 				//---- recipeList ----
-				recipeList.setModel(new AbstractListModel<String>() {
-					String[] values = {
-						"Good Brownies",
-						"Awesome Brownies",
-						"Effin' Fantastic Brownies",
-						"Okay Brownies"
-					};
-					@Override
-					public int getSize() { return values.length; }
-					@Override
-					public String getElementAt(int i) { return values[i]; }
-				});
+				recipeList.setModel(listModel);
 				recipeList.setBorder(null);
 				listPane.setViewportView(recipeList);
 			}
@@ -222,6 +296,7 @@ public class RecipeGUI extends JPanel{
 
 	// JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
 	// Generated using JFormDesigner Evaluation license - Adam Clemons
+    private DefaultListModel<String> listModel;
 	private JPanel panel1;
 	private JPanel toolPanel;
 	private JButton addButton;
