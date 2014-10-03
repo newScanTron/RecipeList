@@ -1,6 +1,7 @@
 /**
  * Created by newScanTron on 9/24/2014.
  */
+import java.util.ArrayList;
 public class Controller {
     public static void Controller()
     {
@@ -19,45 +20,64 @@ public class Controller {
     }
     //addRecipe method pretty standard
 
-    public Recipe addRecipe(Recipe newRecipe) {
-        System.out.println("we just added a recipe");
+    //Recipe (int _id, String _name, Ingredient[] _ingredients, String[] _directions, ArrayList<String> _tags) {
 
-        //@TODO: Add recipe to database
+    public RecipeList currentRecipes = new RecipeList(new Recipe[] {
+            new Recipe(0,"Burrito"),
+            new Recipe(1,"Ramen"),
+            new Recipe(2,"Brownie"),                        // This is where the current recipe objects used in the JList are stored
+            new Recipe(3,"Pizza"),
+            new Recipe(4,"Taco"),
+            new Recipe(5,"Cereal"),
+            new Recipe(6,"Waffles"),
+    });
+
+
+    public Recipe addRecipe(Recipe newRecipe) {
+
+        System.out.println(("Adding recipe '" + newRecipe.name + "' to database..."));
+        //TODO: Add recipe to database
 
         return null;
     }
     //method to edit current recipe
-    public void editRecipe(String oldRecipeName, Recipe newRecipe)
+    public void editRecipe(int oldRecipeID, Recipe newRecipe)
     {
-        System.out.println("We edited the recipe ");
-        delRecipe(findByName(oldRecipeName)); // Remove original
+        System.out.println("Editing recipe '" + oldRecipeID + "'... ");
+        deleteRecipe(oldRecipeID); // Remove original
         addRecipe(newRecipe);   // Add modified original
 
     }
+
+    public void saveRecipe(int id, Recipe newRecipe) {
+
+        // TODO: Overwrite recipe with 'id' in database with newRecipe
+    }
+
     //method to delete recipe
-    public void delRecipe(Recipe deleteRecipe) {
+    public void deleteRecipe(int deleteID) {
 
-        //@TODO: Remove recipe from database
+        System.out.println("Deleting recipe w/ ID '" + deleteID + "' from database...");
 
-        System.out.println("recipe deleted");
-    }
-
-    public String[] searchRecipe(String searchInput) {
-
-        //@TODO: Search Function
-        // Go through all recipes
-        // Find if recipe's name, tags, or ingredients include search input
-        // If so, add recipe to results list
-
-        String[] results = new String[0];
-        return results;
+        //TODO: Remove recipe from database based on ID
 
     }
 
-    public Recipe findByName(String name) {
+    public void searchRecipe(String searchInput) {
 
-        //@TODO: Search for recipe with exact name match
+        System.out.println("Searching for '" + searchInput + "' in database...");
 
-        return new Recipe("test: findByName()");
+        //TODO: Search function that compiles all recipes in database containing searchInput into an array of recipes
+
+        Recipe[] results = new Recipe[] {
+                new Recipe(123,"Search Result 1"),
+                new Recipe(124,"Search Result 2"),
+                new Recipe(125,"Search Result 3"),          // Placeholder for search results
+                new Recipe(126,"Search Result 4"),
+        };
+
+        currentRecipes.recipes = results;
+
     }
+
 }

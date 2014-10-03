@@ -8,6 +8,10 @@ public class Ingredient {
     public String valueMeasure;
     public String unitMeasure;
 
+    Ingredient(String _name) {
+        name = _name;
+    }
+
     Ingredient(int _id, String _name, String _valueMeasure, String _unitMeasure) {
         id = _id;
         name = _name;

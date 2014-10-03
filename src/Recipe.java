@@ -11,8 +11,15 @@ public class Recipe {
     public String[] directions;
     public ArrayList<String> tags = new ArrayList<String>();
 
-    Recipe (String _name) {
+    Recipe (int _id, String _name) {
+        id = _id;
         name = _name;
+        ingredients = new Ingredient[] {new Ingredient(name + " i1"),new Ingredient(name + " i2"),new Ingredient(name + " i3")};
+        directions = new String[] {name + "d1",name + "d2",name + "d3"};
+        tags = new ArrayList<String>();
+        tags.add(name + "tag1");
+        tags.add(name + "tag2");
+        tags.add(name + "tag3");
 
     }
 
