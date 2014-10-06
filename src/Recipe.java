@@ -42,7 +42,6 @@ public class Recipe {
         directions = _directions;
         tags = _tags;
 
-
     }
 
     public void addTag(String _tag) {
