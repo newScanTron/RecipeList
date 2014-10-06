@@ -2,15 +2,14 @@
  * Created by Spencer on 9/22/2014.
  */
 
-import java.util.List;
-import java.util.Date;
-import java.util.Iterator;
-
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+
+import java.util.Iterator;
+import java.util.List;
 
 public class DBOps {
 
@@ -26,7 +25,7 @@ public class DBOps {
     }
 
     //Method to create a recipe in the database
-    public Integer addRecipe(String name, String ingredients, string tags){
+    public Integer addRecipe(String name, String ingredients, String tags){
         Session session = factory.openSession();
         Transaction dbconn = null;
         Integer recipeID = null;
