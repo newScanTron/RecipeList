@@ -7,10 +7,22 @@ public class Recipe {
 
     public int id;
     public String name;
+
+    public Ingredient[] getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(Ingredient[] ingredients) {
+        this.ingredients = ingredients;
+    }
+
     public Ingredient[] ingredients;
     public String[] directions;
     public ArrayList<String> tags = new ArrayList<String>();
-
+    //we need a recipe constructor with no agruments for the way hibernate likes classes
+    // to be structured
+    public Recipe()
+    {}
     Recipe (int _id, String _name) {
         id = _id;
         name = _name;
