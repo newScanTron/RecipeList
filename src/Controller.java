@@ -22,7 +22,7 @@ public class Controller {
 
     //Recipe (int _id, String _name, Ingredient[] _ingredients, String[] _directions, ArrayList<String> _tags) {
 
-    public RecipeList currentRecipes = new RecipeList(new Recipe[] {
+    public recipeList currentRecipes = new recipeList(new Recipe[] {
             new Recipe(0,"Burrito"),
             new Recipe(1,"Ramen"),
             new Recipe(2,"Brownie"),                        // This is where the current recipe objects used in the JList are stored
@@ -44,8 +44,6 @@ public class Controller {
     public void editRecipe(int oldRecipeID, Recipe newRecipe)
     {
         System.out.println("Editing recipe '" + oldRecipeID + "'... ");
-        deleteRecipe(oldRecipeID); // Remove original
-        addRecipe(newRecipe);   // Add modified original
 
     }
 

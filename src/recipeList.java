@@ -3,11 +3,11 @@ import java.util.ArrayList;
 /**
  * Created by aaronc on 9/26/14.
  */
-public class RecipeList {
+public class recipeList {
 
     public Recipe[] recipes = new Recipe[0];
 
-    RecipeList(Recipe[] list) {
+    recipeList(Recipe[] list) {
 
         recipes = list;
 
