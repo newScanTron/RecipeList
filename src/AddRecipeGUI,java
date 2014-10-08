@@ -238,6 +238,7 @@ public class AddRecipeGUI extends JPanel {
 
 				//---- directionsArea ----
 				directionsArea.setText("");
+				directionsArea.setLineWrap(true);
 				directionsPane.setViewportView(directionsArea);
 			}
 			mainPanel.add(directionsPane, CC.xywh(1, 29, 5, 3, CC.FILL, CC.FILL));
