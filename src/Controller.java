@@ -61,6 +61,45 @@ public class Controller {
 
     }
 
+    public void gatherRecipe(RecipeDialog rd) {
+        // Retrieving name
+        String _name = rd.nameField.getText();
+
+        // Retreieving tags
+        String[] _tags = rd.tagField.getText().split(" ");
+
+        // Retrieving Ingredients list
+        rd.ingredients.trimToSize();
+        Ingredient[] _ingredients = new Ingredient[rd.ingredients.size()];
+        for(int i = 0; i < rd.ingredients.size(); i++) {
+            _ingredients[i] = rd.ingredients.get(i);
+        }
+
+        // Retrieving directions
+        String[] _directions = rd.directionsArea.getText().split("\n");
+
+        rd.newRecipe = new Recipe(0,_name,_ingredients,_directions,_tags);
+
+    }
+
+    public void gatherIngredient(RecipeDialog rd) {
+
+        String amountI = rd.amountField.getText().trim();
+        String unitI = rd.unitField.getText().trim();
+        String nameI = rd.ingNameField.getText().trim();
+        String tempIng = amountI + " " + unitI + " " + nameI;
+
+        rd.listModel.addElement(tempIng);
+        rd.ingList.updateUI();
+
+        rd.amountField.setText("");
+        rd.unitField.setText("");
+        rd.ingNameField.setText("");
+
+
+        rd.ingredients.add(new Ingredient(0,nameI,amountI,unitI));
+    }
+
     public void searchRecipe(String searchInput) {
 
         System.out.println("Searching for '" + searchInput + "' in database...");

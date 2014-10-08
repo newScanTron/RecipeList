@@ -14,9 +14,13 @@ public class recipeList {
     }
 
 
-    public void add(String _tag) {
-
-        // TODO: add function? may not be necessary
+    public void add(Recipe r) {
+        Recipe[] newValues = new Recipe[recipes.length+1];
+        for(int a = 0; a < recipes.length; a++){
+            newValues[a] = recipes[a];
+        }
+        newValues[recipes.length] = r;
+        recipes = newValues;
 
     }
 
@@ -52,6 +56,16 @@ public class recipeList {
             if (recipes[i].name == name) {return recipes[i];}
         }
         return null;
+    }
+
+    @Override
+    public String toString() {
+        String print = "";
+        for(int i = 0; i < recipes.length; i++) {
+            print = print + " " + recipes[i].name;
+        }
+        return print;
+
     }
 
 }

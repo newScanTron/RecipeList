@@ -18,24 +18,25 @@ public class Recipe {
 
     public Ingredient[] ingredients;
     public String[] directions;
-    public ArrayList<String> tags = new ArrayList<String>();
+    public String[] tags = new String[0];
     //we need a recipe constructor with no agruments for the way hibernate likes classes
     // to be structured
-    public Recipe()
-    {}
+    public Recipe(){
+        ingredients = new Ingredient[0];
+    }
     Recipe (int _id, String _name) {
         id = _id;
         name = _name;
         ingredients = new Ingredient[] {new Ingredient(name + " i1"),new Ingredient(name + " i2"),new Ingredient(name + " i3")};
         directions = new String[] {name + "d1",name + "d2",name + "d3"};
-        tags = new ArrayList<String>();
-        tags.add(name + "tag1");
-        tags.add(name + "tag2");
-        tags.add(name + "tag3");
+        tags = new String[3];
+        tags[0] = (name + "tag1");
+        tags[1] = (name + "tag2");
+        tags[2] = (name + "tag3");
 
     }
 
-    Recipe (int _id, String _name, Ingredient[] _ingredients, String[] _directions, ArrayList<String> _tags) {
+    Recipe (int _id, String _name, Ingredient[] _ingredients, String[] _directions, String[] _tags) {
         id = _id;
         name = _name;
         ingredients = _ingredients;
@@ -44,18 +45,15 @@ public class Recipe {
 
     }
 
-    public void addTag(String _tag) {
 
-        if (!tags.contains(_tag)) {
-            tags.add(_tag);
-            System.out.println(">Tag added: " + _tag);
+    public String[] getIngredientNames() {
 
-           // TODO: Add tag to database
+            String[] names = new String[ingredients.length];
 
-        }
-        else {
-            System.out.println(">Recipe already contains this tag");
-        }
+            for (int i = 0; i < names.length; i++) {
+                names[0] = ingredients[i].name;
+            }
+            return names;
 
     }
 
@@ -74,11 +72,11 @@ public class Recipe {
         }
 
         print = print.concat("Tags:\n");
-        for (int i = 0; i < tags.size(); i++) {
-            print = print.concat("\t" + tags.get(i) + "\n");
+        for (int i = 0; i < tags.length; i++) {
+            print = print.concat("\t" + tags[i] + "\n");
         }
 
         //return print;
-        return name;
+        return print;
     }
 }

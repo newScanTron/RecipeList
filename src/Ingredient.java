@@ -26,8 +26,11 @@ public class Ingredient {
 
     }
 
+
     @Override
     public String toString() {
-        return valueMeasure + " " + unitMeasure + " of " + name;
+
+        return valueMeasure + " " + unitMeasure + " " + name;
+
     }
 }
