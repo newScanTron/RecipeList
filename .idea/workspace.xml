@@ -38,7 +38,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1955">
+            <state vertical-scroll-proportion="0.8411458" vertical-offset="255" max-vertical-offset="1955">
               <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
               <folding />
             </state>
@@ -550,7 +550,7 @@
       <workItem from="1412626683510" duration="3104000" />
       <workItem from="1412720723339" duration="143000" />
       <workItem from="1412720919576" duration="49000" />
-      <workItem from="1412979719633" duration="139000" />
+      <workItem from="1412979719633" duration="173000" />
     </task>
     <task id="LOCAL-00001" summary="this is a second commit since I have gotten a bit of grasp on gitHub. other than that there are two classes that don't really do anything but print a few lines of text.">
       <created>1410951236694</created>
@@ -576,15 +576,19 @@
       <created>1412979820490</created>
       <updated>1412979820490</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="put up the schema">
+      <created>1412979863661</created>
+      <updated>1412979863661</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29083000" />
+    <option name="totallyTimeSpent" value="29117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="6" width="1270" height="747" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1049,7 +1053,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1955">
+        <state vertical-scroll-proportion="0.8411458" vertical-offset="255" max-vertical-offset="1955">
           <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
           <folding />
         </state>
