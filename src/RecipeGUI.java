@@ -20,7 +20,6 @@ import java.util.zip.DeflaterOutputStream;
 
 public class RecipeGUI extends JPanel{
     //making a instance of the controller class to do stuff
-    Controller controller = new Controller();
     JFrame parent;
 
 
@@ -33,13 +32,7 @@ public class RecipeGUI extends JPanel{
         // TODO: add custom component creation code here
     }
 
-    private Recipe openAddWindow(Recipe r) {
 
-        RecipeDialog addDialog = new RecipeDialog(new JFrame(),this,r,controller);
-        Recipe rec = addDialog.getRecipe();
-        return rec;
-
-    }
 
 
 
@@ -50,11 +43,11 @@ public class RecipeGUI extends JPanel{
 
 
         listModel = new DefaultListModel<String>() {
-            String[] values = controller.currentRecipes.getNames();
+            String[] values = Controller.currentRecipes.getNames();
 
             @Override
             public void clear() {
-                values = controller.currentRecipes.getNames(); // Hi-jacking clear() to serve as a function to update values
+                values = Controller.currentRecipes.getNames(); // Hi-jacking clear() to serve as a function to update values
             }
             @Override
             public int getSize() { return values.length; }
@@ -81,18 +74,19 @@ public class RecipeGUI extends JPanel{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                System.out.println("Adding Recipe...");
-                Recipe addedRecipe = openAddWindow(new Recipe());
+                //System.out.println("Adding Recipe...");
+                Controller.openAddWindow(new Recipe());
 
-                System.out.println(addedRecipe);
+                //System.out.println(addedRecipe);
 
-
+                /**
                 while(listModel.getSize() > 0) {listModel.removeElementAt(0);}
                 controller.currentRecipes.add(addedRecipe);
                 System.out.println(controller.currentRecipes);
                 listModel.clear();
                 recipeList.updateUI();
                 controller.addRecipe(addedRecipe);
+                 **/
             }
         });
         editButton = new JButton();
@@ -104,7 +98,7 @@ public class RecipeGUI extends JPanel{
                 Recipe oldRecipe = new Recipe(0,"This is the original recipe");
                 Recipe newRecipe = new Recipe(0,"This is the new recipe");
                 //TODO: Same as add recipe, but here we need to automatically populate the new window with data from original recipe
-                controller.editRecipe(oldRecipe.id,newRecipe);
+                Controller.editRecipe(oldRecipe.id, newRecipe);
             }
         });
         deleteButton = new JButton();
@@ -115,7 +109,10 @@ public class RecipeGUI extends JPanel{
                 String deleteName = recipeList.getSelectedValue();
                 int deleteIndex = recipeList.getSelectedIndex();
                 listModel.removeElementAt(deleteIndex);     // Removes element from list
-                controller.deleteRecipe(controller.currentRecipes.findByName(deleteName).id);  // Deletes recipe from database
+                Controller.deleteRecipe(Controller.currentRecipes.findByName(deleteName).id);  // Deletes recipe from database
+                Controller.currentRecipes.remove(deleteIndex);
+                recipeList.setSelectedIndex(0);
+                recipeList.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this,deleteIndex,0,true));
                 recipeList.updateUI();  // Refreshes UI
                 System.out.println("Deleting: " + deleteName);
 
@@ -138,7 +135,7 @@ public class RecipeGUI extends JPanel{
         searchField.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                controller.searchRecipe(searchField.getText());
+                Controller.searchRecipe(searchField.getText());
                 listModel.clear();
                 recipeList.updateUI();
 
@@ -149,12 +146,13 @@ public class RecipeGUI extends JPanel{
         recipeList = new JList<>();
         recipeList.setForeground(Color.WHITE);
         recipeList.setBackground(Color.BLACK);
+
         recipeList.addListSelectionListener( new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (e.getValueIsAdjusting()) {
                     String name = recipeList.getSelectedValue();
-                    Recipe selected = controller.currentRecipes.findByName(name);
+                    Recipe selected = Controller.currentRecipes.findByName(name);
                     System.out.println("Selected: " + selected.name);
 
                     directionsTextArea.setText("");
@@ -186,12 +184,6 @@ public class RecipeGUI extends JPanel{
         {
             panel1.setBorder(null);
 
-            // JFormDesigner evaluation mark
-            panel1.setBorder(new javax.swing.border.CompoundBorder(
-                    new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(0, 0, 0, 0),
-                            "JFormDesigner Evaluation", javax.swing.border.TitledBorder.CENTER,
-                            javax.swing.border.TitledBorder.BOTTOM, new java.awt.Font("Dialog", java.awt.Font.BOLD, 12),
-                            java.awt.Color.red), panel1.getBorder())); panel1.addPropertyChangeListener(new java.beans.PropertyChangeListener(){public void propertyChange(java.beans.PropertyChangeEvent e){if("border".equals(e.getPropertyName()))throw new RuntimeException();}});
 
             panel1.setLayout(new BorderLayout());
 

@@ -5,17 +5,17 @@ public class Ingredient {
 
     public int id;
     public String name;
-    public String valueMeasure;
+    public String amountMeasure;
     public String unitMeasure;
 
     Ingredient(String _name) {
         name = _name;
     }
 
-    Ingredient(int _id, String _name, String _valueMeasure, String _unitMeasure) {
+    Ingredient(int _id, String _name, String _amountMeasure, String _unitMeasure) {
         id = _id;
         name = _name;
-        valueMeasure = _valueMeasure;
+        amountMeasure = _amountMeasure;
         unitMeasure = _unitMeasure;
 
     }
@@ -30,7 +30,7 @@ public class Ingredient {
     @Override
     public String toString() {
 
-        return valueMeasure + " " + unitMeasure + " " + name;
+        return amountMeasure + " " + unitMeasure + " " + name;
 
     }
 }

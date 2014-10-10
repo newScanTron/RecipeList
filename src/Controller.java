@@ -2,27 +2,13 @@
  * Created by newScanTron on 9/24/2014.
  */
 import java.util.ArrayList;
-public class Controller {
+public final class Controller {
     public static void Controller()
     {
         System.out.println("what is going on mang");
     }
-    //not real sure we need this but
-    public String toString()
-    {
-        return("im in control");
-    }
-    //need a search function will want it to return a recipe
-    //but that class does not yet exsist
-    public void search(String searchWord)
-    {
-        System.out.println("im searching for, " + searchWord);
-    }
-    //addRecipe method pretty standard
 
-    //Recipe (int _id, String _name, Ingredient[] _ingredients, String[] _directions, ArrayList<String> _tags) {
-
-    public recipeList currentRecipes = new recipeList(new Recipe[] {
+    public static recipeList currentRecipes = new recipeList(new Recipe[] {
             new Recipe(0,"Burrito"),
             new Recipe(1,"Ramen"),
             new Recipe(2,"Brownie"),                        // This is where the current recipe objects used in the JList are stored
@@ -33,7 +19,7 @@ public class Controller {
     });
 
 
-    public Recipe addRecipe(Recipe newRecipe) {
+    public static Recipe addRecipe(Recipe newRecipe) {
 
         System.out.println(("Adding recipe '" + newRecipe.name + "' to database..."));
         //TODO: Add recipe to database
@@ -41,19 +27,19 @@ public class Controller {
         return null;
     }
     //method to edit current recipe
-    public void editRecipe(int oldRecipeID, Recipe newRecipe)
+    public static void editRecipe(int oldRecipeID, Recipe newRecipe)
     {
         System.out.println("Editing recipe '" + oldRecipeID + "'... ");
 
     }
 
-    public void saveRecipe(int id, Recipe newRecipe) {
+    public static void saveRecipe(int id, Recipe newRecipe) {
 
         // TODO: Overwrite recipe with 'id' in database with newRecipe
     }
 
     //method to delete recipe
-    public void deleteRecipe(int deleteID) {
+    public static void deleteRecipe(int deleteID) {
 
         System.out.println("Deleting recipe w/ ID '" + deleteID + "' from database...");
 
@@ -61,7 +47,7 @@ public class Controller {
 
     }
 
-    public void gatherRecipe(RecipeDialog rd) {
+    public static void gatherRecipe(AddRecipeGUI rd) {
         // Retrieving name
         String _name = rd.nameField.getText();
 
@@ -69,38 +55,40 @@ public class Controller {
         String[] _tags = rd.tagField.getText().split(" ");
 
         // Retrieving Ingredients list
-        rd.ingredients.trimToSize();
-        Ingredient[] _ingredients = new Ingredient[rd.ingredients.size()];
-        for(int i = 0; i < rd.ingredients.size(); i++) {
-            _ingredients[i] = rd.ingredients.get(i);
+        ArrayList<Ingredient> ingList = new ArrayList<Ingredient>();
+        if (!rd.ingName1.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName1.getText(),rd.ingAmount1.getText(),rd.ingUnit1.getText()));}
+        if (!rd.ingName2.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName2.getText(),rd.ingAmount2.getText(),rd.ingUnit2.getText()));}
+        if (!rd.ingName3.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName3.getText(),rd.ingAmount3.getText(),rd.ingUnit3.getText()));}
+        if (!rd.ingName4.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName4.getText(),rd.ingAmount4.getText(),rd.ingUnit4.getText()));}
+        if (!rd.ingName5.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName5.getText(),rd.ingAmount5.getText(),rd.ingUnit5.getText()));}
+        if (!rd.ingName6.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName6.getText(),rd.ingAmount6.getText(),rd.ingUnit6.getText()));}
+        if (!rd.ingName7.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName7.getText(),rd.ingAmount7.getText(),rd.ingUnit7.getText()));}
+        if (!rd.ingName8.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName8.getText(),rd.ingAmount8.getText(),rd.ingUnit8.getText()));}
+        if (!rd.ingName9.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName9.getText(),rd.ingAmount9.getText(),rd.ingUnit9.getText()));}
+        if (!rd.ingName10.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName10.getText(),rd.ingAmount10.getText(),rd.ingUnit10.getText()));}
+
+        System.out.println("ArrayList Size: "  + ingList.size());
+
+        ingList.trimToSize();
+        Ingredient[] ingArray = new Ingredient[ingList.size()];
+        for(int i = 0; i < ingArray.length; i++) {
+            ingArray[i] = ingList.get(i);
         }
+        System.out.println("Array Size: "  + ingArray.length);
+
+
+
 
         // Retrieving directions
         String[] _directions = rd.directionsArea.getText().split("\n");
 
-        rd.newRecipe = new Recipe(0,_name,_ingredients,_directions,_tags);
+        currentRecipes.add(new Recipe(0,_name,ingArray,_directions,_tags));
 
     }
 
-    public void gatherIngredient(RecipeDialog rd) {
-
-        String amountI = rd.amountField.getText().trim();
-        String unitI = rd.unitField.getText().trim();
-        String nameI = rd.ingNameField.getText().trim();
-        String tempIng = amountI + " " + unitI + " " + nameI;
-
-        rd.listModel.addElement(tempIng);
-        rd.ingList.updateUI();
-
-        rd.amountField.setText("");
-        rd.unitField.setText("");
-        rd.ingNameField.setText("");
 
 
-        rd.ingredients.add(new Ingredient(0,nameI,amountI,unitI));
-    }
-
-    public void searchRecipe(String searchInput) {
+    public static void searchRecipe(String searchInput) {
 
         System.out.println("Searching for '" + searchInput + "' in database...");
 
@@ -116,5 +104,34 @@ public class Controller {
         currentRecipes.recipes = results;
 
     }
+
+    public static void openAddWindow(Recipe r) {
+
+        Driver.newPanel = new AddRecipeGUI();
+        Driver.displayFrame.getContentPane().removeAll();
+        Driver.displayFrame.getContentPane().add(Driver.newPanel);
+
+        Driver.displayFrame.pack();
+
+        Driver.displayFrame.setLocationRelativeTo(null);
+        Driver.displayFrame.setVisible(true);
+
+
+    }
+
+    public static void closeAddWindow() {
+
+        Driver.newPanel = new RecipeGUI();
+        Driver.displayFrame.getContentPane().removeAll();
+        Driver.displayFrame.getContentPane().add(Driver.newPanel);
+
+        Driver.displayFrame.pack();
+
+        Driver.displayFrame.setLocationRelativeTo(null);
+        Driver.displayFrame.setVisible(true);
+
+
+    }
+
 
 }

@@ -1,18 +1,15 @@
+/**
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.event.*;
 import java.util.ArrayList;
-/*
- * Created by JFormDesigner on Wed Oct 08 12:26:51 MDT 2014
- */
 
 
 
-/**
- * @author Aaron Cameron
- */
+
+
 public class RecipeDialog extends JDialog {
 
     Controller controller;
@@ -376,3 +373,4 @@ public class RecipeDialog extends JDialog {
 
 
 }
+**/
