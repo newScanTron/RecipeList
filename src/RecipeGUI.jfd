@@ -1,0 +1,168 @@
+JFDML JFormDesigner: "5.2.0.3.124" Java: "1.8.0_05" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "159px, left:4dlu, 321px"
+			"$rowSpecs": "max(default;4px), top:4dlu, default, top:4dlu, max(default;4px)"
+		} ) {
+			name: "panel1"
+			"minimumSize": new java.awt.Dimension( 400, 435 )
+			"opaque": true
+			"preferredSize": new java.awt.Dimension( 400, 436 )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "dataPane"
+				"preferredSize": new java.awt.Dimension( 370, 400 )
+				"requestFocusEnabled": false
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "dataPanel"
+					"background": new java.awt.Color( 0, 0, 0, 255 )
+					"minimumSize": new java.awt.Dimension( 320, 81 )
+					"preferredSize": new java.awt.Dimension( 320, 282 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "titleLabel"
+						"background": new java.awt.Color( 0, 0, 0, 255 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 26, true )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"horizontalAlignment": 0
+						"maximumSize": new java.awt.Dimension( 59, 50 )
+						"text": "Recipe Title"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "North"
+					} )
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "directionsTextArea"
+						"background": new java.awt.Color( 0, 0, 0, 255 )
+						"focusable": false
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 0, true )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"lineWrap": true
+						"preferredSize": new java.awt.Dimension( 370, 200 )
+						"text": "Directions:"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "South"
+					} )
+					add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+						name: "splitPane1"
+						"continuousLayout": true
+						"dividerSize": 1
+						"orientation": 0
+						"preferredSize": new java.awt.Dimension( 370, 50 )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "ingredientsTextArea"
+							"background": new java.awt.Color( 0, 0, 0, 255 )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 0, true )
+							"foreground": new java.awt.Color( 255, 255, 255, 255 )
+							"preferredSize": new java.awt.Dimension( 370, 50 )
+							"text": "Ingredients:"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "right"
+						} )
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "tagsTextArea"
+							"background": new java.awt.Color( 0, 0, 0, 255 )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 0, true )
+							"foreground": new java.awt.Color( 255, 255, 255, 255 )
+							"text": "Tags: "
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "left"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridHeight": 3
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+				"$columnCount": 3
+				"$rowCount": 1
+				"hGap": 0
+			} ) {
+				name: "toolPanel"
+				"preferredSize": new java.awt.Dimension( 500, 30 )
+				"border": new javax.swing.border.TitledBorder( new javax.swing.border.EmptyBorder( 0, 0, 0, 0 ), "" )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "addButton"
+					"background": new java.awt.Color( 0, 255, 0, 255 )
+					"text": "+"
+					auxiliary() {
+						"JavaCodeGenerator.customCreate": true
+					}
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"fill": 3
+					"vSizePolicy": 0
+					"preferredSize": new java.awt.Dimension( 30, -1 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "editButton"
+					"background": new java.awt.Color( 255, 255, 0, 255 )
+					"text": "Δ"
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"fill": 3
+					"vSizePolicy": 0
+					"preferredSize": new java.awt.Dimension( 30, -1 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "deleteButton"
+					"background": new java.awt.Color( 255, 51, 51, 255 )
+					"inheritsPopupMenu": false
+					"margin": new java.awt.Insets( 3, 14, 3, 14 )
+					"text": "-"
+					"verifyInputWhenFocusTarget": false
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+					"fill": 3
+					"vSizePolicy": 0
+					"preferredSize": new java.awt.Dimension( 30, -1 )
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+				"gridWidth": 2
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "listPane"
+				"doubleBuffered": false
+				"horizontalScrollBarPolicy": 30
+				"maximumSize": new java.awt.Dimension( 135, 400 )
+				"minimumSize": new java.awt.Dimension( 130, 400 )
+				"preferredSize": new java.awt.Dimension( 129, 400 )
+				"visible": true
+				"border": new javax.swing.border.TitledBorder( "" )
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "recipeList"
+					"model": new javax.swing.DefaultListModel {
+						addElement( "Good Brownies" )
+						addElement( "Awesome Brownies" )
+						addElement( "Effin' Fantastic Brownies" )
+						addElement( "Okay Brownies" )
+					}
+				} )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchField"
+				"text": "Search for a Recipe..."
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 5
+				"hAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"autoscrolls": true
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 491, 466 )
+		} )
+	}
+}

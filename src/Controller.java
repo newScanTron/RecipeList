@@ -82,7 +82,8 @@ public final class Controller {
         // Retrieving directions
         String[] _directions = rd.directionsArea.getText().split("\n");
 
-        currentRecipes.add(new Recipe(0,_name,ingArray,_directions,_tags));
+        if (!_name.equals(""))
+        	currentRecipes.add(new Recipe(0,_name,ingArray,_directions,_tags));
 
     }
 

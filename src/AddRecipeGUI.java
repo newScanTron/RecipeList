@@ -75,7 +75,6 @@ public class AddRecipeGUI extends JPanel {
 		directionsArea = new JTextArea();
 		submit = new JButton();
         submit.addActionListener( new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
 
                 Controller.gatherRecipe(thisGUI);

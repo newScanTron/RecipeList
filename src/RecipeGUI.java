@@ -1,11 +1,14 @@
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import com.jgoodies.forms.factories.CC;
 
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
 import javax.swing.event.AncestorEvent;
 import javax.swing.event.AncestorListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowListener;
@@ -71,7 +74,6 @@ public class RecipeGUI extends JPanel{
 // ACTION LISTENERS
         addButton = new JButton();
         addButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
 
                 //System.out.println("Adding Recipe...");
@@ -91,7 +93,6 @@ public class RecipeGUI extends JPanel{
         });
         editButton = new JButton();
         editButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
 
                 System.out.println("Editing Recipe...");
@@ -103,7 +104,6 @@ public class RecipeGUI extends JPanel{
         });
         deleteButton = new JButton();
         deleteButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
 
                 String deleteName = recipeList.getSelectedValue();
@@ -120,20 +120,17 @@ public class RecipeGUI extends JPanel{
         });
         searchField = new JTextField();
         searchField.addFocusListener(new FocusListener() {
-            @Override
             public void focusGained(FocusEvent e) {
                 searchField.setText("");
                 searchField.setFont(new Font("",Font.PLAIN,12));
             }
 
-            @Override
             public void focusLost(FocusEvent e) {
                 searchField.setText("Search for a Recipe by name, tags, or ingredients");
                 searchField.setFont(new Font("Sanserif",Font.ITALIC,12));
             }
         });
         searchField.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 Controller.searchRecipe(searchField.getText());
                 listModel.clear();
@@ -143,12 +140,11 @@ public class RecipeGUI extends JPanel{
             }
         });
         listPane = new JScrollPane();
-        recipeList = new JList<>();
+        recipeList = new JList<String>();
         recipeList.setForeground(Color.WHITE);
         recipeList.setBackground(Color.BLACK);
 
         recipeList.addListSelectionListener( new ListSelectionListener() {
-            @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (e.getValueIsAdjusting()) {
                     String name = recipeList.getSelectedValue();
@@ -183,47 +179,46 @@ public class RecipeGUI extends JPanel{
         //======== panel1 ========
         {
             panel1.setBorder(null);
-
-
             panel1.setLayout(new BorderLayout());
 
             //======== toolPanel ========
             {
                 toolPanel.setPreferredSize(new Dimension(500, 30));
-                toolPanel.setBorder(null);
+                toolPanel.setBorder(new TitledBorder(BorderFactory.createEmptyBorder(), ""));
                 toolPanel.setLayout(new GridLayoutManager(1, 4, new Insets(0, 0, 0, 0), 0, -1));
 
-                //---- addButton ----
-                addButton.setBackground(Color.green);
-                addButton.setText("+");
-                addButton.setBorder(null);
-                toolPanel.add(addButton, new GridConstraints(0, 0, 1, 1,
-                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-                        GridConstraints.SIZEPOLICY_FIXED,
-                        null, new Dimension(30, 30), null));
+              //---- addButton ----
+				addButton.setBackground(Color.green);
+				addButton.setText("+");
+				toolPanel.add(addButton, new GridConstraints(0, 0, 1, 1,
+					GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
+					GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+					GridConstraints.SIZEPOLICY_FIXED,
+					null, null, null));
+				addButton.setFocusPainted(false);
 
-                //---- editButton ----
-                editButton.setBackground(Color.yellow);
-                editButton.setText("\u0394");
-                editButton.setBorder(null);
-                toolPanel.add(editButton, new GridConstraints(0, 1, 1, 1,
-                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-                        GridConstraints.SIZEPOLICY_FIXED,
-                        null, new Dimension(30, 30), null));
+				//---- editButton ----
+				editButton.setBackground(Color.yellow);
+				editButton.setText("\u0394");
+				toolPanel.add(editButton, new GridConstraints(0, 1, 1, 1,
+					GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
+					GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+					GridConstraints.SIZEPOLICY_FIXED,
+					null, null, null));
+				editButton.setFocusPainted(false);
 
-                //---- deleteButton ----
-                deleteButton.setBackground(new Color(255, 51, 51));
-                deleteButton.setInheritsPopupMenu(false);
-                deleteButton.setText("-");
-                deleteButton.setVerifyInputWhenFocusTarget(false);
-                deleteButton.setBorder(null);
-                toolPanel.add(deleteButton, new GridConstraints(0, 2, 1, 1,
-                        GridConstraints.ANCHOR_WEST, GridConstraints.FILL_BOTH,
-                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-                        GridConstraints.SIZEPOLICY_FIXED,
-                        null, new Dimension(30, 30), null));
+				//---- deleteButton ----
+				deleteButton.setBackground(new Color(255, 51, 51));
+				deleteButton.setInheritsPopupMenu(false);
+				deleteButton.setMargin(new Insets(3, 14, 3, 14));
+				deleteButton.setText("-");
+				deleteButton.setVerifyInputWhenFocusTarget(false);
+				toolPanel.add(deleteButton, new GridConstraints(0, 2, 1, 1,
+					GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
+					GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+					GridConstraints.SIZEPOLICY_FIXED,
+					null, null, null));
+				deleteButton.setFocusPainted(false);
 
                 //---- searchField ----
                 searchField.setText("Search for a Recipe by name, tags, or ingredients");
@@ -238,6 +233,9 @@ public class RecipeGUI extends JPanel{
             }
             panel1.add(toolPanel, BorderLayout.SOUTH);
 
+            listPanel = new JPanel();
+            listPanel.setLayout(new BorderLayout());
+            
             //======== listPane ========
             {
                 listPane.setDoubleBuffered(false);
@@ -252,8 +250,15 @@ public class RecipeGUI extends JPanel{
                 recipeList.setModel(listModel);
                 recipeList.setBorder(null);
                 listPane.setViewportView(recipeList);
+                
+              //---- selectionBox ----
+                selectionBox = new JComboBox<String>(new String[]{"Option 1", "Option 2", "Option 3"});
+    			selectionBox.setAutoscrolls(true);
+    			selectionBox.setBackground(Color.white);
+    			listPanel.add(selectionBox, BorderLayout.NORTH);
             }
-            panel1.add(listPane, BorderLayout.WEST);
+            listPanel.add(listPane, BorderLayout.SOUTH);
+            panel1.add(listPanel, BorderLayout.WEST);
 
             //======== dataPane ========
             {
@@ -327,6 +332,8 @@ public class RecipeGUI extends JPanel{
     private DefaultListModel<String> listModel;
     private JPanel panel1;
     private JPanel toolPanel;
+    private JPanel listPanel;
+    private JComboBox selectionBox;
     private JButton addButton;
     private JButton editButton;
     private JButton deleteButton;
