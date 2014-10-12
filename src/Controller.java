@@ -27,7 +27,7 @@ public final class Controller {
         return null;
     }
     //method to edit current recipe
-    public static void editRecipe(int oldRecipeID, Recipe newRecipe)
+    public static void editRecipe(int oldRecipeID)
     {
         System.out.println("Editing recipe '" + oldRecipeID + "'... ");
 
@@ -51,7 +51,7 @@ public final class Controller {
         // Retrieving name
         String _name = rd.nameField.getText();
 
-        // Retreieving tags
+        // Retrieving tags
         String[] _tags = rd.tagField.getText().split(" ");
 
         // Retrieving Ingredients list
@@ -82,6 +82,7 @@ public final class Controller {
         // Retrieving directions
         String[] _directions = rd.directionsArea.getText().split("\n");
 
+        
         if (!_name.equals(""))
         	currentRecipes.add(new Recipe(0,_name,ingArray,_directions,_tags));
 
@@ -108,7 +109,8 @@ public final class Controller {
 
     public static void openAddWindow(Recipe r) {
 
-        Driver.newPanel = new AddRecipeGUI();
+    	AddRecipeGUI newPanel = new AddRecipeGUI();
+        Driver.newPanel = newPanel;
         Driver.displayFrame.getContentPane().removeAll();
         Driver.displayFrame.getContentPane().add(Driver.newPanel);
 
@@ -117,7 +119,71 @@ public final class Controller {
         Driver.displayFrame.setLocationRelativeTo(null);
         Driver.displayFrame.setVisible(true);
 
-
+        newPanel.nameField.setText(r.name);
+        
+        String tagString = "";
+        for (int i = 0; i < r.tags.length; i++) {
+        	tagString = tagString + " " + r.tags[i];
+        }
+        newPanel.tagField.setText(tagString.trim());
+        
+        if (r.ingredients.length >= 1) {
+        	newPanel.ingAmount1.setText(r.ingredients[0].amountMeasure);
+        	newPanel.ingUnit1.setText(r.ingredients[0].unitMeasure);
+        	newPanel.ingName1.setText(r.ingredients[0].name);
+        }
+        if (r.ingredients.length >= 2) {
+        	newPanel.ingAmount2.setText(r.ingredients[1].amountMeasure);
+        	newPanel.ingUnit2.setText(r.ingredients[1].unitMeasure);
+        	newPanel.ingName2.setText(r.ingredients[1].name);
+        }
+        if (r.ingredients.length >= 3) {
+        	newPanel.ingAmount3.setText(r.ingredients[2].amountMeasure);
+        	newPanel.ingUnit3.setText(r.ingredients[2].unitMeasure);
+        	newPanel.ingName3.setText(r.ingredients[2].name);
+        }
+        if (r.ingredients.length >= 4) {
+        	newPanel.ingAmount4.setText(r.ingredients[3].amountMeasure);
+        	newPanel.ingUnit4.setText(r.ingredients[3].unitMeasure);
+        	newPanel.ingName4.setText(r.ingredients[3].name);
+        }
+        if (r.ingredients.length >= 5) {
+        	newPanel.ingAmount5.setText(r.ingredients[4].amountMeasure);
+        	newPanel.ingUnit5.setText(r.ingredients[4].unitMeasure);
+        	newPanel.ingName5.setText(r.ingredients[4].name);
+        }
+        if (r.ingredients.length >= 6) {
+        	newPanel.ingAmount6.setText(r.ingredients[5].amountMeasure);
+        	newPanel.ingUnit6.setText(r.ingredients[5].unitMeasure);
+        	newPanel.ingName6.setText(r.ingredients[5].name);
+        }
+        if (r.ingredients.length >= 7) {
+        	newPanel.ingAmount7.setText(r.ingredients[6].amountMeasure);
+        	newPanel.ingUnit7.setText(r.ingredients[6].unitMeasure);
+        	newPanel.ingName7.setText(r.ingredients[6].name);
+        }
+        if (r.ingredients.length >= 8) {
+        	newPanel.ingAmount8.setText(r.ingredients[7].amountMeasure);
+        	newPanel.ingUnit8.setText(r.ingredients[7].unitMeasure);
+        	newPanel.ingName8.setText(r.ingredients[7].name);
+        }
+        if (r.ingredients.length >= 9) {
+        	newPanel.ingAmount9.setText(r.ingredients[8].amountMeasure);
+        	newPanel.ingUnit9.setText(r.ingredients[8].unitMeasure);
+        	newPanel.ingName9.setText(r.ingredients[8].name);
+        }
+        if (r.ingredients.length >= 10) {
+        	newPanel.ingAmount10.setText(r.ingredients[9].amountMeasure);
+        	newPanel.ingUnit10.setText(r.ingredients[9].unitMeasure);
+        	newPanel.ingName10.setText(r.ingredients[9].name);
+        }
+        
+        String directions = "";
+        for (int i = 0; i < r.directions.length; i++) {
+        	directions = directions + "\n" + r.directions[i];
+        }
+        directions = directions.trim();
+        newPanel.directionsArea.setText(directions);
     }
 
     public static void closeAddWindow() {

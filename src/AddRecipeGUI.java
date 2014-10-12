@@ -93,7 +93,7 @@ public class AddRecipeGUI extends JPanel {
 			mainPanel.setAutoscrolls(false);
 			mainPanel.setBackground(Color.black);
 			mainPanel.setInheritsPopupMenu(true);
-			mainPanel.setPreferredSize(new Dimension(405, 650));
+			mainPanel.setPreferredSize(new Dimension(405, 600));
 
 			// JFormDesigner evaluation mark
 			mainPanel.setBorder(new javax.swing.border.CompoundBorder(

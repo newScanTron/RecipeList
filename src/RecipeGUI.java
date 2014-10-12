@@ -30,14 +30,14 @@ public class RecipeGUI extends JPanel{
     public RecipeGUI() {
         initComponents();
         add(panel1);
+        recipeList.setSelectedIndex(0);
+        recipeList.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this,0,0,true));
+        recipeList.requestFocus();
+        // Try unselecting the selectionBox by default
     }
     private void createUIComponents() {
         // TODO: add custom component creation code here
     }
-
-
-
-
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
@@ -96,10 +96,12 @@ public class RecipeGUI extends JPanel{
             public void actionPerformed(ActionEvent e) {
 
                 System.out.println("Editing Recipe...");
-                Recipe oldRecipe = new Recipe(0,"This is the original recipe");
-                Recipe newRecipe = new Recipe(0,"This is the new recipe");
+                int editIndex = recipeList.getSelectedIndex();
+                String editName = recipeList.getSelectedValue();
+                Recipe oldRecipe = Controller.currentRecipes.findByName(editName);
                 //TODO: Same as add recipe, but here we need to automatically populate the new window with data from original recipe
-                Controller.editRecipe(oldRecipe.id, newRecipe);
+                Controller.editRecipe(oldRecipe.id);
+                Controller.openAddWindow(oldRecipe);
             }
         });
         deleteButton = new JButton();
