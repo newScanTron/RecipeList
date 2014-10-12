@@ -23,6 +23,7 @@ public class Recipe {
     // to be structured
     public Recipe(){
         ingredients = new Ingredient[0];
+        directions = new String[0];
     }
     Recipe (int _id, String _name) {
         id = _id;
