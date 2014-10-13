@@ -10,6 +10,7 @@ public class DBOps {
     static PreparedStatement pst = null;
     ResultSet resultSet = null;
     ResultSet workingSet = null;
+    int found_id = 0;
     //this connect method is really just to check for a connections
     //if thats something you want to do before you start manipulating
     //the database
@@ -56,6 +57,8 @@ public class DBOps {
     }
 
     //sort of obvious this method searches the recipes
+
+
     public ResultSet searchRecipe(String name)
     {
 
@@ -64,6 +67,7 @@ public class DBOps {
             String statement = "SELECT * FROM recipes.recipes WHERE name = \"" + name + "\"";
             pst = conn.prepareStatement(statement);
             resultSet = pst.executeQuery();
+
             return resultSet;
         }
         catch (SQLException error) {
@@ -105,7 +109,7 @@ public class DBOps {
     }
     //this method is to add recipes right now with all th stuff later hope to just
     //add recipe object
-    public void addRecipe(Recipe recipe)
+    public int addRecipe(Recipe recipe)
     {
         Set<String> set = new HashSet<String>();
         for (int i = recipe.directions.length; i < recipe.directions.length; i -- )
@@ -121,6 +125,10 @@ public class DBOps {
             pst.execute();
             //a while loop to add all the directions to the direction database
             //no real reason for a while over for just is
+            resultSet = searchRecipe(recipe.name);
+            found_id = resultSet.getInt(1);
+            System.out.println("resutl set:" + found_id);
+
             int addCount = 0;
             String[] directions = recipe.directions;
             while (addCount < directions.length)
@@ -188,6 +196,7 @@ public class DBOps {
         {
             System.out.print("we have an SQLException " + ex.getMessage());
         }
+        return found_id;
     }
     public void delete(int id)
     {

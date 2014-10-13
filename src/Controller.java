@@ -1,10 +1,8 @@
 /**
  * Created by newScanTron on 9/24/2014.
  */
+import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.sql.*;
-import java.util.HashSet;
-import java.util.Set;
 public final class Controller {
 
     static int temporaryIdCounter = 0;
@@ -124,7 +122,7 @@ public final class Controller {
                 new Recipe("Search Result 3",true),          // Placeholder for search results
                 new Recipe("Search Result 4",true)
         };
-
+        //
         currentRecipes.recipes = results;
 
     }
