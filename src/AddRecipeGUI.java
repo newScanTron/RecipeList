@@ -16,6 +16,8 @@ import com.jgoodies.forms.layout.*;
 public class AddRecipeGUI extends JPanel {
 
     AddRecipeGUI thisGUI = this;
+    int edittingID = -1;
+
 
 	public AddRecipeGUI() {
 		initComponents();
@@ -77,8 +79,10 @@ public class AddRecipeGUI extends JPanel {
         submit.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
+
+
                 Controller.gatherRecipe(thisGUI);
-                Controller.closeAddWindow();
+                Controller.closeAddWindow(edittingID);
 
 
                // controller.closeAddWindow()

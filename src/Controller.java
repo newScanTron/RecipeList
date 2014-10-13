@@ -3,47 +3,40 @@
  */
 import java.util.ArrayList;
 public final class Controller {
+
+    static int temporaryIdCounter = 0;
+
     public static void Controller()
     {
         System.out.println("what is going on mang");
     }
 
     public static recipeList currentRecipes = new recipeList(new Recipe[] {
-            new Recipe(0,"Burrito"),
-            new Recipe(1,"Ramen"),
-            new Recipe(2,"Brownie"),                        // This is where the current recipe objects used in the JList are stored
-            new Recipe(3,"Pizza"),
-            new Recipe(4,"Taco"),
-            new Recipe(5,"Cereal"),
-            new Recipe(6,"Waffles"),
+            new Recipe("Burrito",true),
+            new Recipe("Ramen",true),
+            new Recipe("Brownie",true),                        // This is where the current recipe objects used in the JList are stored
+            new Recipe("Pizza",true),
+            new Recipe("Taco",true),
+            new Recipe("Cereal",true),
+            new Recipe("Waffles",true)
     });
 
 
     public static Recipe addRecipe(Recipe newRecipe) {
 
-        System.out.println(("Adding recipe '" + newRecipe.name + "' to database..."));
+        currentRecipes.add(newRecipe);
+
         //TODO: Add recipe to database
 
         return null;
-    }
-    //method to edit current recipe
-    public static void editRecipe(int oldRecipeID)
-    {
-        System.out.println("Editing recipe '" + oldRecipeID + "'... ");
 
     }
 
-    public static void saveRecipe(int id, Recipe newRecipe) {
+    public static void deleteRecipeByID(int id) {
 
-        // TODO: Overwrite recipe with 'id' in database with newRecipe
-    }
+        currentRecipes.remove(currentRecipes.findIndexByID(id));
 
-    //method to delete recipe
-    public static void deleteRecipe(int deleteID) {
-
-        System.out.println("Deleting recipe w/ ID '" + deleteID + "' from database...");
-
-        //TODO: Remove recipe from database based on ID
+        // TODO: Also delete recipe from database
 
     }
 
@@ -88,8 +81,6 @@ public final class Controller {
 
     }
 
-
-
     public static void searchRecipe(String searchInput) {
 
         System.out.println("Searching for '" + searchInput + "' in database...");
@@ -97,17 +88,17 @@ public final class Controller {
         //TODO: Search function that compiles all recipes in database containing searchInput into an array of recipes
 
         Recipe[] results = new Recipe[] {
-                new Recipe(123,"Search Result 1"),
-                new Recipe(124,"Search Result 2"),
-                new Recipe(125,"Search Result 3"),          // Placeholder for search results
-                new Recipe(126,"Search Result 4"),
+                new Recipe("Search Result 1",true),
+                new Recipe("Search Result 2",true),
+                new Recipe("Search Result 3",true),          // Placeholder for search results
+                new Recipe("Search Result 4",true)
         };
 
         currentRecipes.recipes = results;
 
     }
 
-    public static void openAddWindow(Recipe r) {
+    public static void openAddWindow(Recipe r,boolean editting) {
 
     	AddRecipeGUI newPanel = new AddRecipeGUI();
         Driver.newPanel = newPanel;
@@ -119,74 +110,85 @@ public final class Controller {
         Driver.displayFrame.setLocationRelativeTo(null);
         Driver.displayFrame.setVisible(true);
 
-        newPanel.nameField.setText(r.name);
-        
-        String tagString = "";
-        for (int i = 0; i < r.tags.length; i++) {
-        	tagString = tagString + " " + r.tags[i];
+        newPanel.nameField.setText("New Recipe");
+        newPanel.submit.setText("Save New Recipe");
+
+
+        if (editting) {
+
+            newPanel.edittingID = r.id;
+
+            newPanel.submit.setText("Save Editted Recipe");
+
+            newPanel.nameField.setText(r.name);
+
+            String tagString = "";
+            for (int i = 0; i < r.tags.length; i++) {
+                tagString = tagString + " " + r.tags[i];
+            }
+            newPanel.tagField.setText(tagString.trim());
+
+            if (r.ingredients.length >= 1) {
+                newPanel.ingAmount1.setText(r.ingredients[0].amountMeasure);
+                newPanel.ingUnit1.setText(r.ingredients[0].unitMeasure);
+                newPanel.ingName1.setText(r.ingredients[0].name);
+            }
+            if (r.ingredients.length >= 2) {
+                newPanel.ingAmount2.setText(r.ingredients[1].amountMeasure);
+                newPanel.ingUnit2.setText(r.ingredients[1].unitMeasure);
+                newPanel.ingName2.setText(r.ingredients[1].name);
+            }
+            if (r.ingredients.length >= 3) {
+                newPanel.ingAmount3.setText(r.ingredients[2].amountMeasure);
+                newPanel.ingUnit3.setText(r.ingredients[2].unitMeasure);
+                newPanel.ingName3.setText(r.ingredients[2].name);
+            }
+            if (r.ingredients.length >= 4) {
+                newPanel.ingAmount4.setText(r.ingredients[3].amountMeasure);
+                newPanel.ingUnit4.setText(r.ingredients[3].unitMeasure);
+                newPanel.ingName4.setText(r.ingredients[3].name);
+            }
+            if (r.ingredients.length >= 5) {
+                newPanel.ingAmount5.setText(r.ingredients[4].amountMeasure);
+                newPanel.ingUnit5.setText(r.ingredients[4].unitMeasure);
+                newPanel.ingName5.setText(r.ingredients[4].name);
+            }
+            if (r.ingredients.length >= 6) {
+                newPanel.ingAmount6.setText(r.ingredients[5].amountMeasure);
+                newPanel.ingUnit6.setText(r.ingredients[5].unitMeasure);
+                newPanel.ingName6.setText(r.ingredients[5].name);
+            }
+            if (r.ingredients.length >= 7) {
+                newPanel.ingAmount7.setText(r.ingredients[6].amountMeasure);
+                newPanel.ingUnit7.setText(r.ingredients[6].unitMeasure);
+                newPanel.ingName7.setText(r.ingredients[6].name);
+            }
+            if (r.ingredients.length >= 8) {
+                newPanel.ingAmount8.setText(r.ingredients[7].amountMeasure);
+                newPanel.ingUnit8.setText(r.ingredients[7].unitMeasure);
+                newPanel.ingName8.setText(r.ingredients[7].name);
+            }
+            if (r.ingredients.length >= 9) {
+                newPanel.ingAmount9.setText(r.ingredients[8].amountMeasure);
+                newPanel.ingUnit9.setText(r.ingredients[8].unitMeasure);
+                newPanel.ingName9.setText(r.ingredients[8].name);
+            }
+            if (r.ingredients.length >= 10) {
+                newPanel.ingAmount10.setText(r.ingredients[9].amountMeasure);
+                newPanel.ingUnit10.setText(r.ingredients[9].unitMeasure);
+                newPanel.ingName10.setText(r.ingredients[9].name);
+            }
+
+            String directions = "";
+            for (int i = 0; i < r.directions.length; i++) {
+                directions = directions + "\n" + r.directions[i];
+            }
+            directions = directions.trim();
+            newPanel.directionsArea.setText(directions);
         }
-        newPanel.tagField.setText(tagString.trim());
-        
-        if (r.ingredients.length >= 1) {
-        	newPanel.ingAmount1.setText(r.ingredients[0].amountMeasure);
-        	newPanel.ingUnit1.setText(r.ingredients[0].unitMeasure);
-        	newPanel.ingName1.setText(r.ingredients[0].name);
-        }
-        if (r.ingredients.length >= 2) {
-        	newPanel.ingAmount2.setText(r.ingredients[1].amountMeasure);
-        	newPanel.ingUnit2.setText(r.ingredients[1].unitMeasure);
-        	newPanel.ingName2.setText(r.ingredients[1].name);
-        }
-        if (r.ingredients.length >= 3) {
-        	newPanel.ingAmount3.setText(r.ingredients[2].amountMeasure);
-        	newPanel.ingUnit3.setText(r.ingredients[2].unitMeasure);
-        	newPanel.ingName3.setText(r.ingredients[2].name);
-        }
-        if (r.ingredients.length >= 4) {
-        	newPanel.ingAmount4.setText(r.ingredients[3].amountMeasure);
-        	newPanel.ingUnit4.setText(r.ingredients[3].unitMeasure);
-        	newPanel.ingName4.setText(r.ingredients[3].name);
-        }
-        if (r.ingredients.length >= 5) {
-        	newPanel.ingAmount5.setText(r.ingredients[4].amountMeasure);
-        	newPanel.ingUnit5.setText(r.ingredients[4].unitMeasure);
-        	newPanel.ingName5.setText(r.ingredients[4].name);
-        }
-        if (r.ingredients.length >= 6) {
-        	newPanel.ingAmount6.setText(r.ingredients[5].amountMeasure);
-        	newPanel.ingUnit6.setText(r.ingredients[5].unitMeasure);
-        	newPanel.ingName6.setText(r.ingredients[5].name);
-        }
-        if (r.ingredients.length >= 7) {
-        	newPanel.ingAmount7.setText(r.ingredients[6].amountMeasure);
-        	newPanel.ingUnit7.setText(r.ingredients[6].unitMeasure);
-        	newPanel.ingName7.setText(r.ingredients[6].name);
-        }
-        if (r.ingredients.length >= 8) {
-        	newPanel.ingAmount8.setText(r.ingredients[7].amountMeasure);
-        	newPanel.ingUnit8.setText(r.ingredients[7].unitMeasure);
-        	newPanel.ingName8.setText(r.ingredients[7].name);
-        }
-        if (r.ingredients.length >= 9) {
-        	newPanel.ingAmount9.setText(r.ingredients[8].amountMeasure);
-        	newPanel.ingUnit9.setText(r.ingredients[8].unitMeasure);
-        	newPanel.ingName9.setText(r.ingredients[8].name);
-        }
-        if (r.ingredients.length >= 10) {
-        	newPanel.ingAmount10.setText(r.ingredients[9].amountMeasure);
-        	newPanel.ingUnit10.setText(r.ingredients[9].unitMeasure);
-        	newPanel.ingName10.setText(r.ingredients[9].name);
-        }
-        
-        String directions = "";
-        for (int i = 0; i < r.directions.length; i++) {
-        	directions = directions + "\n" + r.directions[i];
-        }
-        directions = directions.trim();
-        newPanel.directionsArea.setText(directions);
     }
 
-    public static void closeAddWindow() {
+    public static void closeAddWindow(int edittingID) {
 
         Driver.newPanel = new RecipeGUI();
         Driver.displayFrame.getContentPane().removeAll();
@@ -196,6 +198,10 @@ public final class Controller {
 
         Driver.displayFrame.setLocationRelativeTo(null);
         Driver.displayFrame.setVisible(true);
+
+        if (edittingID != -1) {
+            Controller.deleteRecipeByID(edittingID);
+        }
 
 
     }

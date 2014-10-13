@@ -25,8 +25,9 @@ public class Recipe {
         ingredients = new Ingredient[0];
         directions = new String[0];
     }
-    Recipe (int _id, String _name) {
-        id = _id;
+    Recipe (String _name, boolean thisIsSoWeRememberToTakeOutTheseConstructors) {
+        id = Controller.temporaryIdCounter;
+        Controller.temporaryIdCounter += 1;
         name = _name;
         ingredients = new Ingredient[] {new Ingredient(name + " i1"),new Ingredient(name + " i2"),new Ingredient(name + " i3")};
         directions = new String[] {name + "d1",name + "d2",name + "d3"};

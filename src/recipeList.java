@@ -58,6 +58,20 @@ public class recipeList {
         return null;
     }
 
+    public int findIndexByName(String name) {
+        for(int i = 0; i < recipes.length; i++) {
+            if (recipes[i].name == name) {return i;}
+        }
+        return -1;
+    }
+
+    public int findIndexByID(int id) {
+        for(int i = 0; i < recipes.length; i++) {
+            if (recipes[i].id == id) {return i;}
+        }
+        return -1;
+    }
+
     @Override
     public String toString() {
         String print = "";
