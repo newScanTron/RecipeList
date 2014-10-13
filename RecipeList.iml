@@ -52,9 +52,9 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="forms_rt" level="project" />
-    <orderEntry type="library" name="jgoodies-forms-1.8" level="project" />
+    <orderEntry type="library" name="jgoodies-forms-1.8.0" level="project" />
     <orderEntry type="library" name="jgoodies-common-1.8" level="project" />
+    <orderEntry type="library" name="jgoodies-forms-1.8" level="project" />
   </component>
 </module>
 
