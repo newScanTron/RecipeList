@@ -28,8 +28,7 @@ public class Recipe {
         directions = new String[0];
     }
     Recipe (String _name, boolean thisIsSoWeRememberToTakeOutTheseConstructors) {
-        id = Controller.temporaryIdCounter;
-        Controller.temporaryIdCounter += 1;
+
         name = _name;
         ingredients = new Ingredient[] {new Ingredient(name + " i1"),new Ingredient(name + " i2"),new Ingredient(name + " i3")};
         directions = new String[] {name + "d1",name + "d2",name + "d3"};
@@ -41,14 +40,14 @@ public class Recipe {
     }
 
     Recipe (String _name, Ingredient[] _ingredients, String[] _directions, String[] _tags) {
-        id = Controller.temporaryIdCounter;
-        Controller.temporaryIdCounter += 1;
+
         name = _name;
         ingredients = _ingredients;
         directions = _directions;
         tags = _tags;
 
     }
+
 
 
     public String[] getIngredientNames() {

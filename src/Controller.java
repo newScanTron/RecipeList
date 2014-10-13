@@ -9,8 +9,12 @@ public final class Controller {
 
     static int temporaryIdCounter = 0;
 
+    static DBOps db;
+
     public static void Controller()
+
     {
+        db = new DBOps();
 
     }
 
@@ -28,9 +32,12 @@ public final class Controller {
 
     public static Recipe addRecipe(Recipe newRecipe) {
 
+        DBOps db = new DBOps();
+        db.connect();
+        int _id = db.addRecipe(newRecipe);
+        System.out.println("new id: " + _id);
+        newRecipe.id = _id;
         currentRecipes.add(newRecipe);
-
-        //TODO: Add recipe to database
 
         return null;
 
@@ -41,6 +48,10 @@ public final class Controller {
         System.out.println("deleteRecipeByID: " + currentRecipes.findIndexByID(id));
 
         currentRecipes.remove(currentRecipes.findIndexByID(id));
+
+        db.connect();
+        db.delete(id);
+
 
 
 
@@ -80,8 +91,14 @@ public final class Controller {
         String[] _directions = rd.directionsArea.getText().split("\n");
 
         
-        if (!_name.equals(""))
-        	currentRecipes.add(new Recipe(_name,ingArray,_directions,_tags));
+        if (!_name.equals("")) {
+
+            Recipe newRecipe = new Recipe(_name, ingArray, _directions, _tags);
+
+            addRecipe(newRecipe);
+
+        }
+
 
     }
 

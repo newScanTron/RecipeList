@@ -31,7 +31,7 @@ public final class DBOps {
         try {
 
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/recipes?allowMultiQueries=true"
-                    , "user", "password1");
+                    , "root", "");
             // Do something with the Connection
             //doing something with this connection
 
@@ -109,8 +109,9 @@ public final class DBOps {
     }
     //this method is to add recipes right now with all th stuff later hope to just
     //add recipe object
-    public static void addRecipe(Recipe recipe)
+    public static int addRecipe(Recipe recipe)
     {
+        int returnID = -1;
         Set<String> set = new HashSet<String>();
         for (int i = recipe.directions.length; i < recipe.directions.length; i -- )
         {
@@ -179,8 +180,20 @@ public final class DBOps {
         {
             System.out.print("we have an SQLException " + ex.getMessage());
         }
+
+        ResultSet rs = null;
+        int t = -1;
+        try {
+            rs = searchRecipe(recipe.name);
+            t = rs.getInt(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        return t;
     }
-    public static void delete(int id, String[] directions)
+    public static void delete(int id)
     {
         String stmnt = "DELETE FROM recipes.recipes WHERE id =\" " + id +  "\"";
         try

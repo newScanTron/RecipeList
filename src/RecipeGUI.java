@@ -108,10 +108,6 @@ public class RecipeGUI extends JPanel{
                 Recipe delRecipe = Controller.currentRecipes.findByName(deleteName);
                 Controller.deleteRecipeByID(delRecipe.id);
 
-                //listModel.removeElementAt(deleteIndex);     // Removes element from list
-                //Controller.deleteRecipe(Controller.currentRecipes.findByName(deleteName).id);  // Deletes recipe from database
-                //Controller.currentRecipes.remove(deleteIndex);
-
                 listModel.clear();
                 recipeListBox.setSelectedIndex(0);
                 if (listModel.size() > 0) {
@@ -161,7 +157,8 @@ public class RecipeGUI extends JPanel{
                     ingredientsTextArea.setText("Ingredients: \n");
                     tagsTextArea.setText("Tags: ");
 
-                    titleLabel.setText(selected.name);
+                    titleLabel.setText(selected.name + " " + selected.id);
+
                     for (int i = 0; i < selected.directions.length; i++) {
                         directionsTextArea.append(selected.directions[i] + "\n");
                     }
