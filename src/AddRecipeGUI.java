@@ -1,9 +1,10 @@
+import com.jgoodies.forms.factories.*;
+import com.jgoodies.forms.layout.*;
+
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
-import com.jgoodies.forms.factories.*;
-import com.jgoodies.forms.layout.*;
 /*
  * Created by JFormDesigner on Wed Oct 08 16:47:17 MDT 2014
  */
