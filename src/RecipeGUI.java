@@ -87,7 +87,7 @@ public class RecipeGUI extends JPanel{
         editButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                System.out.println("Editing Recipe...");
+                //System.out.println("Editing Recipe...");
                 int editIndex = recipeListBox.getSelectedIndex();
                 String editName = recipeListBox.getSelectedValue();
                 Recipe oldRecipe = Controller.currentRecipes.findByName(editName);
@@ -111,7 +111,7 @@ public class RecipeGUI extends JPanel{
                 recipeListBox.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this, 0, 0, true));
                 recipeListBox.updateUI();  // Refreshes UI
 
-                System.out.println("Deleting: " + deleteName);
+                //System.out.println("Deleting: " + deleteName);
 
             }
         });
@@ -130,6 +130,7 @@ public class RecipeGUI extends JPanel{
         searchField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 Controller.searchRecipe(searchField.getText());
+                //selectionBox.
                 listModel.clear();
                 recipeListBox.updateUI();
 
@@ -146,7 +147,7 @@ public class RecipeGUI extends JPanel{
                 if (e.getValueIsAdjusting()) {
                     String name = recipeListBox.getSelectedValue();
                     Recipe selected = Controller.currentRecipes.findByName(name);
-                    System.out.println("Selected: " + selected.name);
+                    //System.out.println("Selected: " + selected.name);
 
                     directionsTextArea.setText("");
                     ingredientsTextArea.setText("");
@@ -157,7 +158,7 @@ public class RecipeGUI extends JPanel{
                         directionsTextArea.append(selected.directions[i] + "\n");
                     }
                     for (int i = 0; i < selected.ingredients.length; i++) {
-                        ingredientsTextArea.append(selected.ingredients[i].name + "\n");
+                        ingredientsTextArea.append(selected.ingredients[i].toString() + "\n");
                     }
                     for (int i = 0; i < selected.tags.length; i++) {
                         tagsTextArea.append(selected.tags[i] + "  ");
@@ -249,7 +250,7 @@ public class RecipeGUI extends JPanel{
                 listPane.setViewportView(recipeListBox);
                 
               //---- selectionBox ----
-                selectionBox = new JComboBox<String>(new String[]{"Option 1", "Option 2", "Option 3"});
+                selectionBox = new JComboBox<String>(new String[0]);
     			selectionBox.setAutoscrolls(true);
     			selectionBox.setBackground(Color.white);
     			listPanel.add(selectionBox, BorderLayout.NORTH);

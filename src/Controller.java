@@ -8,7 +8,7 @@ public final class Controller {
 
     public static void Controller()
     {
-        System.out.println("what is going on mang");
+
     }
 
     public static recipeList currentRecipes = new recipeList(new Recipe[] {
@@ -20,6 +20,8 @@ public final class Controller {
             new Recipe("Cereal",true),
             new Recipe("Waffles",true)
     });
+
+    public static  String[] searchHistory = new String[10];
 
 
     public static Recipe addRecipe(Recipe newRecipe) {
@@ -34,7 +36,11 @@ public final class Controller {
 
     public static void deleteRecipeByID(int id) {
 
+        System.out.println("deleteRecipeByID: " + currentRecipes.findIndexByID(id));
+
         currentRecipes.remove(currentRecipes.findIndexByID(id));
+
+
 
         // TODO: Also delete recipe from database
 
@@ -60,14 +66,14 @@ public final class Controller {
         if (!rd.ingName9.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName9.getText(),rd.ingAmount9.getText(),rd.ingUnit9.getText()));}
         if (!rd.ingName10.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName10.getText(),rd.ingAmount10.getText(),rd.ingUnit10.getText()));}
 
-        System.out.println("ArrayList Size: "  + ingList.size());
+        //System.out.println("ArrayList Size: "  + ingList.size());
 
         ingList.trimToSize();
         Ingredient[] ingArray = new Ingredient[ingList.size()];
         for(int i = 0; i < ingArray.length; i++) {
             ingArray[i] = ingList.get(i);
         }
-        System.out.println("Array Size: "  + ingArray.length);
+        //System.out.println("Array Size: "  + ingArray.length);
 
 
 
@@ -77,13 +83,18 @@ public final class Controller {
 
         
         if (!_name.equals(""))
-        	currentRecipes.add(new Recipe(0,_name,ingArray,_directions,_tags));
+        	currentRecipes.add(new Recipe(_name,ingArray,_directions,_tags));
 
     }
 
     public static void searchRecipe(String searchInput) {
 
-        System.out.println("Searching for '" + searchInput + "' in database...");
+        searchInput = searchInput.trim();
+
+        for(int i = 1; i < searchHistory.length; i++) {
+            searchHistory[i] = searchHistory[i-1];
+        }
+        searchHistory[0] = searchInput;
 
         //TODO: Search function that compiles all recipes in database containing searchInput into an array of recipes
 
@@ -117,6 +128,7 @@ public final class Controller {
         if (editting) {
 
             newPanel.edittingID = r.id;
+            System.out.println("openAddWindow: " + newPanel.edittingID);
 
             newPanel.submit.setText("Save Editted Recipe");
 
@@ -190,6 +202,12 @@ public final class Controller {
 
     public static void closeAddWindow(int edittingID) {
 
+        if (edittingID != -1) {
+            System.out.println("Call Before");
+            deleteRecipeByID(edittingID);
+            System.out.println("Call After");
+        }
+
         Driver.newPanel = new RecipeGUI();
         Driver.displayFrame.getContentPane().removeAll();
         Driver.displayFrame.getContentPane().add(Driver.newPanel);
@@ -199,9 +217,6 @@ public final class Controller {
         Driver.displayFrame.setLocationRelativeTo(null);
         Driver.displayFrame.setVisible(true);
 
-        if (edittingID != -1) {
-            Controller.deleteRecipeByID(edittingID);
-        }
 
 
     }

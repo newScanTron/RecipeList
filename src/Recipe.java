@@ -22,6 +22,8 @@ public class Recipe {
     //we need a recipe constructor with no agruments for the way hibernate likes classes
     // to be structured
     public Recipe(){
+        id = Controller.temporaryIdCounter;
+        Controller.temporaryIdCounter += 1;
         ingredients = new Ingredient[0];
         directions = new String[0];
     }
@@ -38,8 +40,9 @@ public class Recipe {
 
     }
 
-    Recipe (int _id, String _name, Ingredient[] _ingredients, String[] _directions, String[] _tags) {
-        id = _id;
+    Recipe (String _name, Ingredient[] _ingredients, String[] _directions, String[] _tags) {
+        id = Controller.temporaryIdCounter;
+        Controller.temporaryIdCounter += 1;
         name = _name;
         ingredients = _ingredients;
         directions = _directions;

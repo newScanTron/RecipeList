@@ -79,13 +79,8 @@ public class AddRecipeGUI extends JPanel {
         submit.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-
-
                 Controller.gatherRecipe(thisGUI);
                 Controller.closeAddWindow(edittingID);
-
-
-               // controller.closeAddWindow()
 
             }
         });
