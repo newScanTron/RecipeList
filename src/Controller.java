@@ -2,6 +2,9 @@
  * Created by newScanTron on 9/24/2014.
  */
 import java.util.ArrayList;
+import java.sql.*;
+import java.util.HashSet;
+import java.util.Set;
 public final class Controller {
 
     static int temporaryIdCounter = 0;
@@ -21,7 +24,6 @@ public final class Controller {
             new Recipe("Waffles",true)
     });
 
-    public static  String[] searchHistory = new String[10];
 
 
     public static Recipe addRecipe(Recipe newRecipe) {
@@ -73,10 +75,6 @@ public final class Controller {
         for(int i = 0; i < ingArray.length; i++) {
             ingArray[i] = ingList.get(i);
         }
-        //System.out.println("Array Size: "  + ingArray.length);
-
-
-
 
         // Retrieving directions
         String[] _directions = rd.directionsArea.getText().split("\n");
@@ -89,12 +87,17 @@ public final class Controller {
 
     public static void searchRecipe(String searchInput) {
 
-        searchInput = searchInput.trim();
+        searchInput = searchInput.trim().toLowerCase();
 
-        for(int i = 1; i < searchHistory.length; i++) {
-            searchHistory[i] = searchHistory[i-1];
+        ResultSet testResults = null;
+/*
+        try {
+            testResults = DBOps.searchRecipe(searchInput);
+            System.out.println("Test: " + testResults.getString(0));
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        searchHistory[0] = searchInput;
+*/
 
         //TODO: Search function that compiles all recipes in database containing searchInput into an array of recipes
 

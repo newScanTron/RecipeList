@@ -14,6 +14,7 @@ public class Driver {
 	
 	static void createGUI() throws IOException {
 
+        DBOps.connect();
 		// Creates the JFrame, sets what happens when we close it, and makes it a fixed size (dependent on JPanel sizes)
 		displayFrame = new JFrame("Recipe Program!");
 		

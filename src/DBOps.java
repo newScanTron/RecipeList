@@ -1,19 +1,23 @@
+import com.mysql.jdbc.*;
+
 import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Created by newScanTron on 10/9/2014.
  */
-public class DBOps {
+public final class DBOps {
     static Connection conn = null;
     static PreparedStatement pst = null;
-    ResultSet resultSet = null;
-    ResultSet workingSet = null;
+    static ResultSet resultSet = null;
+    static ResultSet workingSet = null;
     //this connect method is really just to check for a connections
     //if thats something you want to do before you start manipulating
     //the database
-    public void connect()
+    public static void connect()
     {
 
         try {
@@ -25,8 +29,9 @@ public class DBOps {
             System.out.println("we hate you so much and cant find the driver");
         }
         try {
+
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/recipes?allowMultiQueries=true"
-                    , "newScanTron", "Cr!TT3rph3r214");
+                    , "user", "password1");
             // Do something with the Connection
             //doing something with this connection
 
@@ -35,6 +40,7 @@ public class DBOps {
             System.out.println("SQLException: " + ex.getMessage());
             System.out.println("SQLState: " + ex.getSQLState());
             System.out.println("VendorError: " + ex.getErrorCode());
+
         } finally {
             // going to close all these things but in this program is probable less
             //necessary cus this thing is using basically no memory.
@@ -56,7 +62,7 @@ public class DBOps {
     }
 
     //sort of obvious this method searches the recipes
-    public ResultSet searchRecipe(String name)
+    public static ResultSet searchRecipe(String name) throws SQLException
     {
 
         try {
@@ -73,7 +79,7 @@ public class DBOps {
        return resultSet;
     }
     //method to search by tag
-    public ResultSet searchTag(String name)
+    public static ResultSet searchTag(String name)
     {
         try {
 
@@ -88,7 +94,7 @@ public class DBOps {
         return resultSet;
     }
     //one last search method to look through the ingreients
-    public ResultSet searchIngredients(String name)
+    public static ResultSet searchIngredients(String name)
     {
         try {
             String statement = "SELECT * FROM recipes.ingredients WHERE name = \"" + name + "\"";
@@ -103,7 +109,7 @@ public class DBOps {
     }
     //this method is to add recipes right now with all th stuff later hope to just
     //add recipe object
-    public void addRecipe(Recipe recipe)
+    public static void addRecipe(Recipe recipe)
     {
         Set<String> set = new HashSet<String>();
         for (int i = recipe.directions.length; i < recipe.directions.length; i -- )
@@ -174,7 +180,7 @@ public class DBOps {
             System.out.print("we have an SQLException " + ex.getMessage());
         }
     }
-    public void delete(int id, String[] directions)
+    public static void delete(int id, String[] directions)
     {
         String stmnt = "DELETE FROM recipes.recipes WHERE id =\" " + id +  "\"";
         try

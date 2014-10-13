@@ -7,16 +7,17 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
+import java.awt.event.*;
 
 
 public class RecipeGUI extends JPanel{
     //making a instance of the controller class to do stuff
     JFrame parent;
 
+    Color bgColor = new Color(163, 144, 82);
+    Color panelColor =  new Color(105, 93, 52);
+    Color fgColor = new Color(0, 0, 0);
+    Color listColor = new Color(191, 169, 96);
 
 
     public RecipeGUI() {
@@ -25,7 +26,9 @@ public class RecipeGUI extends JPanel{
         recipeListBox.setSelectedIndex(0);
         recipeListBox.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this,0,0,true));
         recipeListBox.requestFocus();
-        // Try unselecting the selectionBox by default
+        setBackground(panelColor);
+
+        // Try unselecting the filterBox by default
     }
     private void createUIComponents() {
         // TODO: add custom component creation code here
@@ -60,6 +63,8 @@ public class RecipeGUI extends JPanel{
                 values = newValues;
             }
         }; // Logic for displaying the names in the list model
+
+
         panel1 = new JPanel();
         toolPanel = new JPanel();
 
@@ -73,14 +78,14 @@ public class RecipeGUI extends JPanel{
 
                 //System.out.println(addedRecipe);
 
-                /**
+                /*
                 while(listModel.getSize() > 0) {listModel.removeElementAt(0);}
                 controller.currentRecipes.add(addedRecipe);
                 System.out.println(controller.currentRecipes);
                 listModel.clear();
                 recipeListBox.updateUI();
                 controller.addRecipe(addedRecipe);
-                 **/
+                 */
             }
         });
         editButton = new JButton();
@@ -92,6 +97,7 @@ public class RecipeGUI extends JPanel{
                 String editName = recipeListBox.getSelectedValue();
                 Recipe oldRecipe = Controller.currentRecipes.findByName(editName);
                 Controller.openAddWindow(oldRecipe,true);
+                // TODO: select editted recipe after
             }
         });
         deleteButton = new JButton();
@@ -108,7 +114,9 @@ public class RecipeGUI extends JPanel{
 
                 listModel.clear();
                 recipeListBox.setSelectedIndex(0);
-                recipeListBox.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this, 0, 0, true));
+                if (listModel.size() > 0) {
+                    recipeListBox.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this, 0, 0, true));
+                }
                 recipeListBox.updateUI();  // Refreshes UI
 
                 //System.out.println("Deleting: " + deleteName);
@@ -123,14 +131,14 @@ public class RecipeGUI extends JPanel{
             }
 
             public void focusLost(FocusEvent e) {
-                searchField.setText("Search for a Recipe by name, tags, or ingredients");
+                searchField.setText("Search by name, tags, or ingredients");
                 searchField.setFont(new Font("Sanserif",Font.ITALIC,12));
             }
         });
         searchField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                String searchText = searchField.getText();
                 Controller.searchRecipe(searchField.getText());
-                //selectionBox.
                 listModel.clear();
                 recipeListBox.updateUI();
 
@@ -139,8 +147,8 @@ public class RecipeGUI extends JPanel{
         });
         listPane = new JScrollPane();
         recipeListBox = new JList<String>();
-        recipeListBox.setForeground(Color.WHITE);
-        recipeListBox.setBackground(Color.BLACK);
+        recipeListBox.setForeground(fgColor);
+        recipeListBox.setBackground(listColor);
 
         recipeListBox.addListSelectionListener(new ListSelectionListener() {
             public void valueChanged(ListSelectionEvent e) {
@@ -149,9 +157,9 @@ public class RecipeGUI extends JPanel{
                     Recipe selected = Controller.currentRecipes.findByName(name);
                     //System.out.println("Selected: " + selected.name);
 
-                    directionsTextArea.setText("");
-                    ingredientsTextArea.setText("");
-                    tagsTextArea.setText("");
+                    directionsTextArea.setText("Directions: \n");
+                    ingredientsTextArea.setText("Ingredients: \n");
+                    tagsTextArea.setText("Tags: ");
 
                     titleLabel.setText(selected.name);
                     for (int i = 0; i < selected.directions.length; i++) {
@@ -182,8 +190,9 @@ public class RecipeGUI extends JPanel{
             //======== toolPanel ========
             {
                 toolPanel.setPreferredSize(new Dimension(500, 30));
-                toolPanel.setBorder(new TitledBorder(BorderFactory.createEmptyBorder(), ""));
+                toolPanel.setBorder(null);
                 toolPanel.setLayout(new GridLayoutManager(1, 4, new Insets(0, 0, 0, 0), 0, -1));
+                toolPanel.setBackground(panelColor);
 
               //---- addButton ----
 				addButton.setBackground(Color.green);
@@ -219,7 +228,7 @@ public class RecipeGUI extends JPanel{
 				deleteButton.setFocusPainted(false);
 
                 //---- searchField ----
-                searchField.setText("Search for a Recipe by name, tags, or ingredients");
+                searchField.setText("Search by name, tags, or ingredients");
                 searchField.setBorder(null);
                 searchField.setPreferredSize(new Dimension(200, 14));
                 searchField.setHorizontalAlignment(SwingConstants.TRAILING);
@@ -249,11 +258,39 @@ public class RecipeGUI extends JPanel{
                 recipeListBox.setBorder(null);
                 listPane.setViewportView(recipeListBox);
                 
-              //---- selectionBox ----
-                selectionBox = new JComboBox<String>(new String[0]);
-    			selectionBox.setAutoscrolls(true);
-    			selectionBox.setBackground(Color.white);
-    			listPanel.add(selectionBox, BorderLayout.NORTH);
+              //---- filterBox ----
+                filterPanel = new JPanel();
+                filterPanel.setLayout(new BorderLayout());
+                filterPanel.setBackground(bgColor);
+
+
+                filterLabel = new JLabel("Filter By:");
+                filterLabel.setFont(new Font("Serif",Font.ITALIC,16));
+                listLabel = new JLabel("Recipes: ");
+                listLabel.setFont(new Font("Serif",Font.ITALIC,16));
+                filterBox = new JComboBox<String>(new String[]{"","Breakfast","Lunch","Dinner","Snack"});
+                filterBox.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+
+                        String searchText = filterBox.getSelectedItem().toString();
+                        Controller.searchRecipe(searchField.getText());
+                        listModel.clear();
+                        recipeListBox.updateUI();
+
+                    }
+                });
+
+
+
+                filterBox.setAutoscrolls(true);
+
+
+                filterPanel.add(filterLabel, BorderLayout.NORTH);
+    			filterPanel.add(filterBox, BorderLayout.CENTER);
+                filterPanel.add(listLabel, BorderLayout.SOUTH);
+
+                listPanel.add(filterPanel, BorderLayout.NORTH);
             }
             listPanel.add(listPane, BorderLayout.SOUTH);
             panel1.add(listPanel, BorderLayout.WEST);
@@ -264,16 +301,18 @@ public class RecipeGUI extends JPanel{
                 dataPane.setRequestFocusEnabled(false);
                 dataPane.setBorder(null);
 
+
                 //======== dataPanel ========
                 {
-                    dataPanel.setBackground(Color.black);
-                    dataPanel.setBorder(null);
+                    dataPanel.setBackground(bgColor);
                     dataPanel.setLayout(new BorderLayout());
+                    dataPanel.setBorder(null);
+
 
                     //---- titleLabel ----
-                    titleLabel.setBackground(Color.black);
-                    titleLabel.setFont(titleLabel.getFont().deriveFont(26f));
-                    titleLabel.setForeground(Color.white);
+                    titleLabel.setBackground(bgColor);
+                    titleLabel.setFont(new Font("Sanserif",Font.ITALIC,26));
+                    titleLabel.setForeground(fgColor);
                     titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
                     titleLabel.setMaximumSize(new Dimension(59, 50));
                     titleLabel.setText("Recipe Title");
@@ -281,10 +320,10 @@ public class RecipeGUI extends JPanel{
                     dataPanel.add(titleLabel, BorderLayout.NORTH);
 
                     //---- directionsTextArea ----
-                    directionsTextArea.setBackground(Color.black);
+                    directionsTextArea.setBackground(bgColor);
                     directionsTextArea.setFocusable(false);
                     directionsTextArea.setFont(directionsTextArea.getFont().deriveFont(Font.BOLD));
-                    directionsTextArea.setForeground(Color.white);
+                    directionsTextArea.setForeground(fgColor);
                     directionsTextArea.setLineWrap(true);
                     directionsTextArea.setPreferredSize(new Dimension(370, 200));
                     directionsTextArea.setText("Directions:");
@@ -299,22 +338,24 @@ public class RecipeGUI extends JPanel{
                         splitPane1.setPreferredSize(new Dimension(370, 50));
                         splitPane1.setBorder(null);
 
+
                         //---- ingredientsTextArea ----
-                        ingredientsTextArea.setBackground(Color.black);
+                        ingredientsTextArea.setBackground(bgColor);
                         ingredientsTextArea.setFont(ingredientsTextArea.getFont().deriveFont(Font.BOLD));
-                        ingredientsTextArea.setForeground(Color.white);
+                        ingredientsTextArea.setForeground(fgColor);
                         ingredientsTextArea.setPreferredSize(new Dimension(370, 50));
                         ingredientsTextArea.setText("Ingredients:");
                         ingredientsTextArea.setBorder(null);
                         splitPane1.setBottomComponent(ingredientsTextArea);
 
                         //---- tagsTextArea ----
-                        tagsTextArea.setBackground(Color.black);
+                        tagsTextArea.setBackground(bgColor);
                         tagsTextArea.setFont(tagsTextArea.getFont().deriveFont(Font.BOLD));
-                        tagsTextArea.setForeground(Color.white);
+                        tagsTextArea.setForeground(fgColor);
                         tagsTextArea.setText("Tags: ");
                         tagsTextArea.setBorder(null);
                         splitPane1.setTopComponent(tagsTextArea);
+
                     }
                     dataPanel.add(splitPane1, BorderLayout.CENTER);
                 }
@@ -331,7 +372,10 @@ public class RecipeGUI extends JPanel{
     private JPanel panel1;
     private JPanel toolPanel;
     private JPanel listPanel;
-    private JComboBox selectionBox;
+    private JLabel listLabel;
+    private JLabel filterLabel;
+    private JComboBox filterBox;
+    private JPanel filterPanel;
     private JButton addButton;
     private JButton editButton;
     private JButton deleteButton;
