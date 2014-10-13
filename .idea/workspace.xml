@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0d24d95-f37f-4cc2-99e0-f044593e9750" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller.java" afterPath="$PROJECT_DIR$/src/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBOps.java" afterPath="$PROJECT_DIR$/src/DBOps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RecipeGUI.java" afterPath="$PROJECT_DIR$/src/RecipeGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecipeList.iml" afterPath="$PROJECT_DIR$/RecipeList.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RecipeList.iws" />
@@ -290,7 +284,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/.IntelliJIdea13/config/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="SQL Dialects" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -564,17 +558,21 @@
       <workItem from="1413161209961" duration="2364000" />
       <workItem from="1413163655187" duration="1854000" />
       <workItem from="1413165694440" duration="1212000" />
-      <workItem from="1413167014752" duration="5438000" />
+      <workItem from="1413167014752" duration="5770000" />
     </task>
     <task id="LOCAL-00001" summary="my DBOps is added&#10;">
       <created>1413161369372</created>
       <updated>1413161369372</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables">
+      <created>1413226162426</created>
+      <updated>1413226162426</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14740000" />
+    <option name="totallyTimeSpent" value="15072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="4" width="1258" height="743" extended-state="0" />
@@ -627,7 +625,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="my DBOps is added&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="my DBOps is added&#10;" />
+    <MESSAGE value="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
