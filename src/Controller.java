@@ -123,7 +123,7 @@ public final class Controller {
                 new Recipe("Search Result 4",true)
         };
         //
-        currentRecipes.recipes = results;
+        currentRecipes.recipes = db.searchAll(searchInput);
 
     }
 

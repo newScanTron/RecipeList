@@ -4,7 +4,6 @@
     <list default="true" id="d0d24d95-f37f-4cc2-99e0-f044593e9750" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller.java" afterPath="$PROJECT_DIR$/src/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBOps.java" afterPath="$PROJECT_DIR$/src/DBOps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Driver.java" afterPath="$PROJECT_DIR$/src/Driver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RecipeList.iws" />
@@ -48,51 +47,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBOps.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DBOps.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DBOps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6" vertical-offset="85" max-vertical-offset="3043">
-              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="3213">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#connect#0;class#DBOps#0" expanded="false" />
-                <marker date="1413239683160" expanded="true" signature="2157:2216" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1413239683160" expanded="true" signature="2645:2701" placeholder="SELECT * FRO..tags..." />
-                <marker date="1413239683160" expanded="true" signature="3174:3237" placeholder="SELECT * FRO..ingredients..." />
-                <marker date="1413239683160" expanded="true" signature="4045:4131" placeholder="INSERT recip..." />
-                <marker date="1413239683160" expanded="true" signature="4672:4875" placeholder="INSERT direc..." />
-                <marker date="1413239683160" expanded="true" signature="4815:4874" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413239683160" expanded="true" signature="5593:5648" placeholder="INSERT ingre..." />
-                <marker date="1413239683160" expanded="true" signature="5835:6059" placeholder="INSERT recip..." />
-                <marker date="1413239683160" expanded="true" signature="5887:5954" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413239683160" expanded="true" signature="5999:6058" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413239683160" expanded="true" signature="6266:6341" placeholder="INSERT value..." />
-                <marker date="1413239683160" expanded="true" signature="6371:6449" placeholder="INSERT unit_..." />
-                <marker date="1413239683160" expanded="true" signature="6560:6820" placeholder="INSERT ingre..." />
-                <marker date="1413239683160" expanded="true" signature="6607:6674" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413239683160" expanded="true" signature="6732:6819" placeholder="SELECT id FR..value_of_measurement..." />
-                <marker date="1413239683160" expanded="true" signature="6850:7114" placeholder="INSERT ingre..." />
-                <marker date="1413239683160" expanded="true" signature="6908:6997" placeholder="SELECT id FR..unit_of_measurement..." />
-                <marker date="1413239683160" expanded="true" signature="7046:7113" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413239683160" expanded="true" signature="7363:7406" placeholder="INSERT tags ..." />
-                <marker date="1413239683160" expanded="true" signature="7593:7791" placeholder="INSERT recip..." />
-                <marker date="1413239683160" expanded="true" signature="7631:7686" placeholder="SELECT id FR..tags..." />
-                <marker date="1413239683160" expanded="true" signature="7731:7790" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413239683160" expanded="true" signature="8115:8169" placeholder="DELETE FROM ..." />
+                <marker date="1413240523674" expanded="true" signature="2403:2462" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1413240523674" expanded="true" signature="2891:2947" placeholder="SELECT * FRO..tags..." />
+                <marker date="1413240523674" expanded="true" signature="3420:3483" placeholder="SELECT * FRO..ingredients..." />
+                <marker date="1413240523674" expanded="true" signature="4291:4377" placeholder="INSERT recip..." />
+                <marker date="1413240523674" expanded="true" signature="4918:5121" placeholder="INSERT direc..." />
+                <marker date="1413240523674" expanded="true" signature="5061:5120" placeholder="SELECT id FR..recipes..." />
+                <marker date="1413240523674" expanded="true" signature="5839:5894" placeholder="INSERT ingre..." />
+                <marker date="1413240523674" expanded="true" signature="6081:6305" placeholder="INSERT recip..." />
+                <marker date="1413240523674" expanded="true" signature="6133:6200" placeholder="SELECT id FR..ingredients..." />
+                <marker date="1413240523674" expanded="true" signature="6245:6304" placeholder="SELECT id FR..recipes..." />
+                <marker date="1413240523674" expanded="true" signature="6512:6587" placeholder="INSERT value..." />
+                <marker date="1413240523674" expanded="true" signature="6617:6695" placeholder="INSERT unit_..." />
+                <marker date="1413240523674" expanded="true" signature="6806:7066" placeholder="INSERT ingre..." />
+                <marker date="1413240523674" expanded="true" signature="6853:6920" placeholder="SELECT id FR..ingredients..." />
+                <marker date="1413240523674" expanded="true" signature="6978:7065" placeholder="SELECT id FR..value_of_measurement..." />
+                <marker date="1413240523674" expanded="true" signature="7096:7360" placeholder="INSERT ingre..." />
+                <marker date="1413240523674" expanded="true" signature="7154:7243" placeholder="SELECT id FR..unit_of_measurement..." />
+                <marker date="1413240523674" expanded="true" signature="7292:7359" placeholder="SELECT id FR..ingredients..." />
+                <marker date="1413240523674" expanded="true" signature="7609:7652" placeholder="INSERT tags ..." />
+                <marker date="1413240523674" expanded="true" signature="7839:8037" placeholder="INSERT recip..." />
+                <marker date="1413240523674" expanded="true" signature="7877:7932" placeholder="SELECT id FR..tags..." />
+                <marker date="1413240523674" expanded="true" signature="7977:8036" placeholder="SELECT id FR..recipes..." />
+                <marker date="1413240523674" expanded="true" signature="8361:8415" placeholder="DELETE FROM ..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recipes.directions" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..directions">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -149,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="4182">
-              <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.76" vertical-offset="1751" max-vertical-offset="4182">
+              <caret line="125" column="59" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -198,8 +184,8 @@
         <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes_to_tags" />
         <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients_value" />
         <option value="$PROJECT_DIR$/src/Driver.java" />
-        <option value="$PROJECT_DIR$/src/Controller.java" />
         <option value="$PROJECT_DIR$/src/DBOps.java" />
+        <option value="$PROJECT_DIR$/src/Controller.java" />
       </list>
     </option>
   </component>
@@ -290,7 +276,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/.IntelliJIdea13/config/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -565,7 +551,7 @@
       <workItem from="1413163655187" duration="1854000" />
       <workItem from="1413165694440" duration="1212000" />
       <workItem from="1413167014752" duration="8816000" />
-      <workItem from="1413237666777" duration="2015000" />
+      <workItem from="1413237666777" duration="2855000" />
     </task>
     <task id="LOCAL-00001" summary="my DBOps is added&#10;">
       <created>1413161369372</created>
@@ -579,11 +565,15 @@
       <created>1413226235735</created>
       <updated>1413226235735</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="more ops stuff&#10;">
+      <created>1413239705813</created>
+      <updated>1413239705813</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20133000" />
+    <option name="totallyTimeSpent" value="20973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="4" width="1258" height="743" extended-state="0" />
@@ -637,7 +627,8 @@
     </option>
     <MESSAGE value="my DBOps is added&#10;" />
     <MESSAGE value="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables" />
+    <MESSAGE value="more ops stuff&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="more ops stuff&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,29 +647,29 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#connect#0;class#DBOps#0" expanded="false" />
-            <marker date="1413239683160" expanded="true" signature="2157:2216" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="2645:2701" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413239683160" expanded="true" signature="3174:3237" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="4045:4131" placeholder="INSERT recip..." />
-            <marker date="1413239683160" expanded="true" signature="4672:4875" placeholder="INSERT direc..." />
-            <marker date="1413239683160" expanded="true" signature="4815:4874" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="5593:5648" placeholder="INSERT ingre..." />
-            <marker date="1413239683160" expanded="true" signature="5835:6059" placeholder="INSERT recip..." />
-            <marker date="1413239683160" expanded="true" signature="5887:5954" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="5999:6058" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="6266:6341" placeholder="INSERT value..." />
-            <marker date="1413239683160" expanded="true" signature="6371:6449" placeholder="INSERT unit_..." />
-            <marker date="1413239683160" expanded="true" signature="6560:6820" placeholder="INSERT ingre..." />
-            <marker date="1413239683160" expanded="true" signature="6607:6674" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="6732:6819" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413239683160" expanded="true" signature="6850:7114" placeholder="INSERT ingre..." />
-            <marker date="1413239683160" expanded="true" signature="6908:6997" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413239683160" expanded="true" signature="7046:7113" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="7363:7406" placeholder="INSERT tags ..." />
-            <marker date="1413239683160" expanded="true" signature="7593:7791" placeholder="INSERT recip..." />
-            <marker date="1413239683160" expanded="true" signature="7631:7686" placeholder="SELECT id FR..tags..." />
-            <marker date="1413239683160" expanded="true" signature="7731:7790" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="8115:8169" placeholder="DELETE FROM ..." />
+            <marker date="1413240523674" expanded="true" signature="2403:2462" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="2891:2947" placeholder="SELECT * FRO..tags..." />
+            <marker date="1413240523674" expanded="true" signature="3420:3483" placeholder="SELECT * FRO..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="4291:4377" placeholder="INSERT recip..." />
+            <marker date="1413240523674" expanded="true" signature="4918:5121" placeholder="INSERT direc..." />
+            <marker date="1413240523674" expanded="true" signature="5061:5120" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="5839:5894" placeholder="INSERT ingre..." />
+            <marker date="1413240523674" expanded="true" signature="6081:6305" placeholder="INSERT recip..." />
+            <marker date="1413240523674" expanded="true" signature="6133:6200" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="6245:6304" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="6512:6587" placeholder="INSERT value..." />
+            <marker date="1413240523674" expanded="true" signature="6617:6695" placeholder="INSERT unit_..." />
+            <marker date="1413240523674" expanded="true" signature="6806:7066" placeholder="INSERT ingre..." />
+            <marker date="1413240523674" expanded="true" signature="6853:6920" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="6978:7065" placeholder="SELECT id FR..value_of_measurement..." />
+            <marker date="1413240523674" expanded="true" signature="7096:7360" placeholder="INSERT ingre..." />
+            <marker date="1413240523674" expanded="true" signature="7154:7243" placeholder="SELECT id FR..unit_of_measurement..." />
+            <marker date="1413240523674" expanded="true" signature="7292:7359" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="7609:7652" placeholder="INSERT tags ..." />
+            <marker date="1413240523674" expanded="true" signature="7839:8037" placeholder="INSERT recip..." />
+            <marker date="1413240523674" expanded="true" signature="7877:7932" placeholder="SELECT id FR..tags..." />
+            <marker date="1413240523674" expanded="true" signature="7977:8036" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="8361:8415" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1088,45 +1079,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="4182">
-          <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DBOps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6" vertical-offset="85" max-vertical-offset="3043">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="3213">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#connect#0;class#DBOps#0" expanded="false" />
-            <marker date="1413239683160" expanded="true" signature="2157:2216" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="2645:2701" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413239683160" expanded="true" signature="3174:3237" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="4045:4131" placeholder="INSERT recip..." />
-            <marker date="1413239683160" expanded="true" signature="4672:4875" placeholder="INSERT direc..." />
-            <marker date="1413239683160" expanded="true" signature="4815:4874" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="5593:5648" placeholder="INSERT ingre..." />
-            <marker date="1413239683160" expanded="true" signature="5835:6059" placeholder="INSERT recip..." />
-            <marker date="1413239683160" expanded="true" signature="5887:5954" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="5999:6058" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="6266:6341" placeholder="INSERT value..." />
-            <marker date="1413239683160" expanded="true" signature="6371:6449" placeholder="INSERT unit_..." />
-            <marker date="1413239683160" expanded="true" signature="6560:6820" placeholder="INSERT ingre..." />
-            <marker date="1413239683160" expanded="true" signature="6607:6674" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="6732:6819" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413239683160" expanded="true" signature="6850:7114" placeholder="INSERT ingre..." />
-            <marker date="1413239683160" expanded="true" signature="6908:6997" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413239683160" expanded="true" signature="7046:7113" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239683160" expanded="true" signature="7363:7406" placeholder="INSERT tags ..." />
-            <marker date="1413239683160" expanded="true" signature="7593:7791" placeholder="INSERT recip..." />
-            <marker date="1413239683160" expanded="true" signature="7631:7686" placeholder="SELECT id FR..tags..." />
-            <marker date="1413239683160" expanded="true" signature="7731:7790" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239683160" expanded="true" signature="8115:8169" placeholder="DELETE FROM ..." />
+            <marker date="1413240523674" expanded="true" signature="2403:2462" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="2891:2947" placeholder="SELECT * FRO..tags..." />
+            <marker date="1413240523674" expanded="true" signature="3420:3483" placeholder="SELECT * FRO..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="4291:4377" placeholder="INSERT recip..." />
+            <marker date="1413240523674" expanded="true" signature="4918:5121" placeholder="INSERT direc..." />
+            <marker date="1413240523674" expanded="true" signature="5061:5120" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="5839:5894" placeholder="INSERT ingre..." />
+            <marker date="1413240523674" expanded="true" signature="6081:6305" placeholder="INSERT recip..." />
+            <marker date="1413240523674" expanded="true" signature="6133:6200" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="6245:6304" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="6512:6587" placeholder="INSERT value..." />
+            <marker date="1413240523674" expanded="true" signature="6617:6695" placeholder="INSERT unit_..." />
+            <marker date="1413240523674" expanded="true" signature="6806:7066" placeholder="INSERT ingre..." />
+            <marker date="1413240523674" expanded="true" signature="6853:6920" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="6978:7065" placeholder="SELECT id FR..value_of_measurement..." />
+            <marker date="1413240523674" expanded="true" signature="7096:7360" placeholder="INSERT ingre..." />
+            <marker date="1413240523674" expanded="true" signature="7154:7243" placeholder="SELECT id FR..unit_of_measurement..." />
+            <marker date="1413240523674" expanded="true" signature="7292:7359" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413240523674" expanded="true" signature="7609:7652" placeholder="INSERT tags ..." />
+            <marker date="1413240523674" expanded="true" signature="7839:8037" placeholder="INSERT recip..." />
+            <marker date="1413240523674" expanded="true" signature="7877:7932" placeholder="SELECT id FR..tags..." />
+            <marker date="1413240523674" expanded="true" signature="7977:8036" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413240523674" expanded="true" signature="8361:8415" placeholder="DELETE FROM ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76" vertical-offset="1751" max-vertical-offset="4182">
+          <caret line="125" column="59" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

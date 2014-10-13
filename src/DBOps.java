@@ -10,6 +10,7 @@ public class DBOps {
     static PreparedStatement pst = null;
     ResultSet resultSet = null;
     ResultSet workingSet = null;
+    Recipe[] foundRecipes = {};
     int found_id = 0;
     //this connect method is really just to check for a connections
     //if thats something you want to do before you start manipulating
@@ -57,7 +58,16 @@ public class DBOps {
     }
 
     //sort of obvious this method searches the recipes
+    public Recipe[] searchAll(String name)
+    {
+        resultSet = searchIngredients(name);
+        //
+        resultSet = searchRecipe(name);
 
+        resultSet = searchTag(name);
+
+        return foundRecipes;
+    }
 
     public ResultSet searchRecipe(String name)
     {
