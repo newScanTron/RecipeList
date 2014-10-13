@@ -90,13 +90,15 @@ public class DBOps {
     //one last search method to look through the ingreients
     public ResultSet searchIngredients(String name)
     {
-        try {
+        try
+        {
             String statement = "SELECT * FROM recipes.ingredients WHERE name = \"" + name + "\"";
             pst = conn.prepareStatement(statement);
             resultSet = pst.executeQuery();
             return resultSet;
         }
-        catch (SQLException error) {
+        catch (SQLException error)
+        {
             System.out.println("prepared statement failed " + error.getMessage());
         }
         return resultSet;
@@ -134,6 +136,19 @@ public class DBOps {
             //a for loop to add all the ingredients
             for (Ingredient ingredient: recipe.getIngredients())
             {
+                try
+                {
+
+                    resultSet = searchIngredients(ingredient.name);
+                    if (resultSet != null)
+                    System.out.println(resultSet.getInt(1));
+                }
+                catch (Exception e)
+                {
+                    System.out.println("this is the lamest exception handeling ever " );
+                    e.printStackTrace();
+                }
+
                 stmnt = "INSERT ingredients SET name=\"" + ingredient.name + "\"";
                 pst = conn.prepareStatement(stmnt);
                 pst.execute();
@@ -174,7 +189,7 @@ public class DBOps {
             System.out.print("we have an SQLException " + ex.getMessage());
         }
     }
-    public void delete(int id, String[] directions)
+    public void delete(int id)
     {
         String stmnt = "DELETE FROM recipes.recipes WHERE id =\" " + id +  "\"";
         try

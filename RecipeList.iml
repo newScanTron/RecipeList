@@ -53,6 +53,8 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="jgoodies-forms-1.8.0" level="project" />
+    <orderEntry type="library" name="jgoodies-common-1.8.0" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.31-bin" level="project" />
   </component>
 </module>
 

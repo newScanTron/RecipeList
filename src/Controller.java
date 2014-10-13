@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public final class Controller {
 
     static int temporaryIdCounter = 0;
-
+    static DBOps ops = new DBOps();
     public static void Controller()
     {
         System.out.println("what is going on mang");
@@ -37,6 +37,7 @@ public final class Controller {
         currentRecipes.remove(currentRecipes.findIndexByID(id));
 
         // TODO: Also delete recipe from database
+        ops.delete(id);
 
     }
 
@@ -75,9 +76,14 @@ public final class Controller {
         // Retrieving directions
         String[] _directions = rd.directionsArea.getText().split("\n");
 
-        
+        Recipe addedRecipe = new Recipe(0,_name,ingArray,_directions,_tags);
         if (!_name.equals(""))
-        	currentRecipes.add(new Recipe(0,_name,ingArray,_directions,_tags));
+        	;
+            currentRecipes.add(addedRecipe);
+
+        ops.connect();
+        ops.addRecipe(addedRecipe);
+
 
     }
 
