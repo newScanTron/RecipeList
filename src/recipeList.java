@@ -66,7 +66,9 @@ public class recipeList {
     }
 
     public int findIndexByID(int id) {
+        System.out.println("Search: " + id);
         for(int i = 0; i < recipes.length; i++) {
+            System.out.println("Comparing to: " + recipes[i].id);
             if (recipes[i].id == id) {return i;}
         }
         return -1;

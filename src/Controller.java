@@ -2,13 +2,20 @@
  * Created by newScanTron on 9/24/2014.
  */
 import java.util.ArrayList;
+import java.sql.*;
+import java.util.HashSet;
+import java.util.Set;
 public final class Controller {
 
     static int temporaryIdCounter = 0;
-    static DBOps ops = new DBOps();
+
+    static DBOps db;
+
     public static void Controller()
+
     {
-        System.out.println("what is going on mang");
+        db = new DBOps();
+
     }
 
     public static recipeList currentRecipes = new recipeList(new Recipe[] {
@@ -22,11 +29,15 @@ public final class Controller {
     });
 
 
+
     public static Recipe addRecipe(Recipe newRecipe) {
 
+        DBOps db = new DBOps();
+        db.connect();
+        int _id = db.addRecipe(newRecipe);
+        System.out.println("new id: " + _id);
+        newRecipe.id = _id;
         currentRecipes.add(newRecipe);
-
-        //TODO: Add recipe to database
 
         return null;
 
@@ -34,10 +45,17 @@ public final class Controller {
 
     public static void deleteRecipeByID(int id) {
 
+        System.out.println("deleteRecipeByID: " + currentRecipes.findIndexByID(id));
+
         currentRecipes.remove(currentRecipes.findIndexByID(id));
 
+        db.connect();
+        db.delete(id);
+
+
+
+
         // TODO: Also delete recipe from database
-        ops.delete(id);
 
     }
 
@@ -61,35 +79,42 @@ public final class Controller {
         if (!rd.ingName9.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName9.getText(),rd.ingAmount9.getText(),rd.ingUnit9.getText()));}
         if (!rd.ingName10.getText().trim().equals("")) {ingList.add(new Ingredient(0,rd.ingName10.getText(),rd.ingAmount10.getText(),rd.ingUnit10.getText()));}
 
-        System.out.println("ArrayList Size: "  + ingList.size());
+        //System.out.println("ArrayList Size: "  + ingList.size());
 
         ingList.trimToSize();
         Ingredient[] ingArray = new Ingredient[ingList.size()];
         for(int i = 0; i < ingArray.length; i++) {
             ingArray[i] = ingList.get(i);
         }
-        System.out.println("Array Size: "  + ingArray.length);
-
-
-
 
         // Retrieving directions
         String[] _directions = rd.directionsArea.getText().split("\n");
 
-        Recipe addedRecipe = new Recipe(0,_name,ingArray,_directions,_tags);
-        if (!_name.equals(""))
-        	;
-            currentRecipes.add(addedRecipe);
+        
+        if (!_name.equals("")) {
 
-        ops.connect();
-        ops.addRecipe(addedRecipe);
+            Recipe newRecipe = new Recipe(_name, ingArray, _directions, _tags);
+
+            addRecipe(newRecipe);
+
+        }
 
 
     }
 
     public static void searchRecipe(String searchInput) {
 
-        System.out.println("Searching for '" + searchInput + "' in database...");
+        searchInput = searchInput.trim().toLowerCase();
+
+        ResultSet testResults = null;
+/*
+        try {
+            testResults = DBOps.searchRecipe(searchInput);
+            System.out.println("Test: " + testResults.getString(0));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+*/
 
         //TODO: Search function that compiles all recipes in database containing searchInput into an array of recipes
 
@@ -123,6 +148,7 @@ public final class Controller {
         if (editting) {
 
             newPanel.edittingID = r.id;
+            System.out.println("openAddWindow: " + newPanel.edittingID);
 
             newPanel.submit.setText("Save Editted Recipe");
 
@@ -196,6 +222,12 @@ public final class Controller {
 
     public static void closeAddWindow(int edittingID) {
 
+        if (edittingID != -1) {
+            System.out.println("Call Before");
+            deleteRecipeByID(edittingID);
+            System.out.println("Call After");
+        }
+
         Driver.newPanel = new RecipeGUI();
         Driver.displayFrame.getContentPane().removeAll();
         Driver.displayFrame.getContentPane().add(Driver.newPanel);
@@ -205,9 +237,6 @@ public final class Controller {
         Driver.displayFrame.setLocationRelativeTo(null);
         Driver.displayFrame.setVisible(true);
 
-        if (edittingID != -1) {
-            Controller.deleteRecipeByID(edittingID);
-        }
 
 
     }

@@ -16,11 +16,18 @@ import java.awt.event.ActionListener;
  */
 public class AddRecipeGUI extends JPanel {
 
+    Color bgColor = new Color(163, 144, 82);
+    Color panelColor =  new Color(105, 93, 52);
+    Color fgColor = new Color(0, 0, 0);
+    Color listColor = new Color(191, 169, 96);
+
     AddRecipeGUI thisGUI = this;
     int edittingID = -1;
 
 
 	public AddRecipeGUI() {
+
+        setBackground(panelColor);
 		initComponents();
 		add(mainPanel);
 	}
@@ -80,13 +87,8 @@ public class AddRecipeGUI extends JPanel {
         submit.addActionListener( new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-
-
                 Controller.gatherRecipe(thisGUI);
                 Controller.closeAddWindow(edittingID);
-
-
-               // controller.closeAddWindow()
 
             }
         });
@@ -96,7 +98,7 @@ public class AddRecipeGUI extends JPanel {
 		//======== mainPanel ========
 		{
 			mainPanel.setAutoscrolls(false);
-			mainPanel.setBackground(Color.black);
+			mainPanel.setBackground(bgColor);
 			mainPanel.setInheritsPopupMenu(true);
 			mainPanel.setPreferredSize(new Dimension(405, 650));
 
@@ -114,7 +116,7 @@ public class AddRecipeGUI extends JPanel {
 			//---- nameLabel ----
 			nameLabel.setAutoscrolls(false);
 			nameLabel.setFont(nameLabel.getFont().deriveFont(Font.BOLD, 20f));
-			nameLabel.setForeground(Color.white);
+			nameLabel.setForeground(fgColor);
 			nameLabel.setText("Name:");
 			mainPanel.add(nameLabel, CC.xy(1, 1));
 
@@ -126,14 +128,14 @@ public class AddRecipeGUI extends JPanel {
 			//---- tagsLabel ----
 			tagsLabel.setDoubleBuffered(true);
 			tagsLabel.setFont(tagsLabel.getFont().deriveFont(Font.BOLD, 20f));
-			tagsLabel.setForeground(Color.white);
+			tagsLabel.setForeground(fgColor);
 			tagsLabel.setText("Tags:");
 			mainPanel.add(tagsLabel, CC.xy(1, 3));
 
 			//---- amountLabel ----
 			amountLabel.setFocusTraversalPolicyProvider(true);
 			amountLabel.setFont(amountLabel.getFont().deriveFont(Font.BOLD, 16f));
-			amountLabel.setForeground(Color.white);
+			amountLabel.setForeground(fgColor);
 			amountLabel.setText("Amount");
 			mainPanel.add(amountLabel, CC.xy(1, 7, CC.CENTER, CC.DEFAULT));
 
@@ -142,23 +144,23 @@ public class AddRecipeGUI extends JPanel {
 			mainPanel.add(tagField, CC.xywh(3, 3, 3, 1, CC.FILL, CC.DEFAULT));
 
 			//---- unitLabel ----
-			unitLabel.setBackground(Color.black);
+			unitLabel.setBackground(bgColor);
 			unitLabel.setFont(unitLabel.getFont().deriveFont(Font.BOLD, 16f));
-			unitLabel.setForeground(Color.white);
+			unitLabel.setForeground(fgColor);
 			unitLabel.setText("Unit");
 			mainPanel.add(unitLabel, CC.xy(3, 7, CC.CENTER, CC.DEFAULT));
 
 			//---- ingLabel ----
-			ingLabel.setBackground(Color.black);
+			ingLabel.setBackground(bgColor);
 			ingLabel.setFont(ingLabel.getFont().deriveFont(Font.BOLD, 20f));
-			ingLabel.setForeground(Color.white);
+			ingLabel.setForeground(fgColor);
 			ingLabel.setText("Ingredients");
 			mainPanel.add(ingLabel, CC.xy(3, 5, CC.CENTER, CC.DEFAULT));
 
 			//---- ingNameLabel ----
-			ingNameLabel.setBackground(Color.black);
+			ingNameLabel.setBackground(bgColor);
 			ingNameLabel.setFont(ingNameLabel.getFont().deriveFont(Font.BOLD, 16f));
-			ingNameLabel.setForeground(Color.white);
+			ingNameLabel.setForeground(fgColor);
 			ingNameLabel.setText("Name");
 			mainPanel.add(ingNameLabel, CC.xy(5, 7, CC.CENTER, CC.DEFAULT));
 			mainPanel.add(ingAmount1, CC.xy(1, 9, CC.FILL, CC.DEFAULT));
@@ -250,9 +252,9 @@ public class AddRecipeGUI extends JPanel {
 			mainPanel.add(ingName10, CC.xy(5, 27, CC.FILL, CC.DEFAULT));
 
 			//---- directionsLabel ----
-			directionsLabel.setBackground(Color.black);
+			directionsLabel.setBackground(bgColor);
 			directionsLabel.setFont(directionsLabel.getFont().deriveFont(Font.BOLD, 20f));
-			directionsLabel.setForeground(Color.white);
+			directionsLabel.setForeground(fgColor);
 			directionsLabel.setText("Directions");
 			mainPanel.add(directionsLabel, CC.xy(3, 28, CC.CENTER, CC.DEFAULT));
 
