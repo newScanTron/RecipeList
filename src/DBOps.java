@@ -63,7 +63,26 @@ public class DBOps {
         resultSet = searchIngredients(name);
         //
         resultSet = searchRecipe(name);
-
+        //now to tryp to populate a new recipe
+        try
+        {
+            int search_id_int = resultSet.getInt(1);
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        String search_id_name = null;
+        try
+        {
+            search_id_name = resultSet.getString(2);
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        Recipe foundRecipe = new Recipe(search_id_name, true);
+        Recipe[] newRecipes = {foundRecipe};
+        foundRecipes = newRecipes;
+        //im not sure this is going to work
         resultSet = searchTag(name);
 
         return foundRecipes;
