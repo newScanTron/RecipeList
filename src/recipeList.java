@@ -13,6 +13,10 @@ public class recipeList {
 
     }
 
+    recipeList() {
+
+    }
+
 
     public void add(Recipe r) {
         Recipe[] newValues = new Recipe[recipes.length+1];

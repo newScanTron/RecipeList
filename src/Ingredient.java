@@ -3,7 +3,7 @@
  */
 public class Ingredient {
 
-    public int id;
+
     public String name;
     public String amountMeasure;
     public String unitMeasure;
@@ -12,8 +12,7 @@ public class Ingredient {
         name = _name;
     }
 
-    Ingredient(int _id, String _name, String _amountMeasure, String _unitMeasure) {
-        id = _id;
+    Ingredient(String _name, String _amountMeasure, String _unitMeasure) {
         name = _name;
         amountMeasure = _amountMeasure;
         unitMeasure = _unitMeasure;

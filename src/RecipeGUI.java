@@ -21,6 +21,9 @@ public class RecipeGUI extends JPanel{
 
 
     public RecipeGUI() {
+
+        Controller.testController();
+
         initComponents();
         add(panel1);
         recipeListBox.setSelectedIndex(0);
@@ -34,6 +37,21 @@ public class RecipeGUI extends JPanel{
         // TODO: add custom component creation code here
     }
 
+    private void showDialog(String message,String title, int type) {
+        JOptionPane.showMessageDialog(this,message,title,type);
+    }
+    private int showOption(String message, String title, int optionType, int messageType) {
+
+        int n = JOptionPane.showOptionDialog(this,
+                message,
+                title,
+                optionType,
+                messageType,
+                null,
+                null,
+                0);
+        return n;
+    }
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Adam Clemons
@@ -73,50 +91,55 @@ public class RecipeGUI extends JPanel{
         addButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                //System.out.println("Adding Recipe...");
                 Controller.openAddWindow(new Recipe(),false);
 
-                //System.out.println(addedRecipe);
-
-                /*
-                while(listModel.getSize() > 0) {listModel.removeElementAt(0);}
-                controller.currentRecipes.add(addedRecipe);
-                System.out.println(controller.currentRecipes);
-                listModel.clear();
-                recipeListBox.updateUI();
-                controller.addRecipe(addedRecipe);
-                 */
             }
         });
         editButton = new JButton();
         editButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                //System.out.println("Editing Recipe...");
-                int editIndex = recipeListBox.getSelectedIndex();
-                String editName = recipeListBox.getSelectedValue();
-                Recipe oldRecipe = Controller.currentRecipes.findByName(editName);
-                Controller.openAddWindow(oldRecipe,true);
-                // TODO: select editted recipe after
+                if (listModel.getSize() > 0) {
+
+                    if (showOption("Edit recipe? Original recipe will be deleted.","Edit recipe?",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE) == 0) {
+
+                        //System.out.println("Editing Recipe...");
+                        int editIndex = recipeListBox.getSelectedIndex();
+                        String editName = recipeListBox.getSelectedValue();
+                        Recipe oldRecipe = Controller.currentRecipes.findByName(editName);
+                        Controller.openAddWindow(oldRecipe, true);
+
+                    }
+
+                }
+                else {showDialog("No recipe in list to edit!\nSearch for recipes to add them to list.","Edit Error",JOptionPane.WARNING_MESSAGE);}
+
             }
         });
         deleteButton = new JButton();
         deleteButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                String deleteName = recipeListBox.getSelectedValue();
-                Recipe delRecipe = Controller.currentRecipes.findByName(deleteName);
-                Controller.deleteRecipeByID(delRecipe.id);
+                if (listModel.getSize() > 0) {
 
-                listModel.clear();
-                recipeListBox.setSelectedIndex(0);
-                if (listModel.size() > 0) {
-                    recipeListBox.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this, 0, 0, true));
+                    if (showOption("Delete recipe?","Delete recipe?",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE) == 0) {
+
+                        String deleteName = recipeListBox.getSelectedValue();
+                        Recipe delRecipe = Controller.currentRecipes.findByName(deleteName);
+                        Controller.deleteRecipeByID(delRecipe.id);
+
+                        listModel.clear();
+                        recipeListBox.setSelectedIndex(0);
+                        if (listModel.size() > 0) {
+                            recipeListBox.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this, 0, 0, true));
+                        }
+                        recipeListBox.updateUI();  // Refreshes UI
+
+                        //System.out.println("Deleting: " + deleteName);
+                    }
                 }
-                recipeListBox.updateUI();  // Refreshes UI
 
-                //System.out.println("Deleting: " + deleteName);
-
+                else {showDialog("No recipe in list to delete!\nSearch for recipes to add them to list.","Delete Error",JOptionPane.WARNING_MESSAGE);}
             }
         });
         searchField = new JTextField();
@@ -191,38 +214,38 @@ public class RecipeGUI extends JPanel{
                 toolPanel.setLayout(new GridLayoutManager(1, 4, new Insets(0, 0, 0, 0), 0, -1));
                 toolPanel.setBackground(panelColor);
 
-              //---- addButton ----
-				addButton.setBackground(Color.green);
-				addButton.setText("+");
-				toolPanel.add(addButton, new GridConstraints(0, 0, 1, 1,
-					GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
-					GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-					GridConstraints.SIZEPOLICY_FIXED,
-					null, null, null));
-				addButton.setFocusPainted(false);
+                //---- addButton ----
+                addButton.setBackground(Color.green);
+                addButton.setText("+");
+                toolPanel.add(addButton, new GridConstraints(0, 0, 1, 1,
+                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
+                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+                        GridConstraints.SIZEPOLICY_FIXED,
+                        null, null, null));
+                addButton.setFocusPainted(false);
 
-				//---- editButton ----
-				editButton.setBackground(Color.yellow);
-				editButton.setText("\u0394");
-				toolPanel.add(editButton, new GridConstraints(0, 1, 1, 1,
-					GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
-					GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-					GridConstraints.SIZEPOLICY_FIXED,
-					null, null, null));
-				editButton.setFocusPainted(false);
+                //---- editButton ----
+                editButton.setBackground(Color.yellow);
+                editButton.setText("\u0394");
+                toolPanel.add(editButton, new GridConstraints(0, 1, 1, 1,
+                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
+                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+                        GridConstraints.SIZEPOLICY_FIXED,
+                        null, null, null));
+                editButton.setFocusPainted(false);
 
-				//---- deleteButton ----
-				deleteButton.setBackground(new Color(255, 51, 51));
-				deleteButton.setInheritsPopupMenu(false);
-				deleteButton.setMargin(new Insets(3, 14, 3, 14));
-				deleteButton.setText("-");
-				deleteButton.setVerifyInputWhenFocusTarget(false);
-				toolPanel.add(deleteButton, new GridConstraints(0, 2, 1, 1,
-					GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
-					GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
-					GridConstraints.SIZEPOLICY_FIXED,
-					null, null, null));
-				deleteButton.setFocusPainted(false);
+                //---- deleteButton ----
+                deleteButton.setBackground(new Color(255, 51, 51));
+                deleteButton.setInheritsPopupMenu(false);
+                deleteButton.setMargin(new Insets(3, 14, 3, 14));
+                deleteButton.setText("-");
+                deleteButton.setVerifyInputWhenFocusTarget(false);
+                toolPanel.add(deleteButton, new GridConstraints(0, 2, 1, 1,
+                        GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH,
+                        GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW,
+                        GridConstraints.SIZEPOLICY_FIXED,
+                        null, null, null));
+                deleteButton.setFocusPainted(false);
 
                 //---- searchField ----
                 searchField.setText("Search by name, tags, or ingredients");
@@ -239,7 +262,7 @@ public class RecipeGUI extends JPanel{
 
             listPanel = new JPanel();
             listPanel.setLayout(new BorderLayout());
-            
+
             //======== listPane ========
             {
                 listPane.setDoubleBuffered(false);
@@ -254,14 +277,14 @@ public class RecipeGUI extends JPanel{
                 recipeListBox.setModel(listModel);
                 recipeListBox.setBorder(null);
                 listPane.setViewportView(recipeListBox);
-                
-              //---- filterBox ----
+
+                //---- filterBox ----
                 filterPanel = new JPanel();
                 filterPanel.setLayout(new BorderLayout());
                 filterPanel.setBackground(bgColor);
 
 
-                filterLabel = new JLabel("Filter By:");
+                filterLabel = new JLabel("Search by: ");
                 filterLabel.setFont(new Font("Serif",Font.ITALIC,16));
                 listLabel = new JLabel("Recipes: ");
                 listLabel.setFont(new Font("Serif",Font.ITALIC,16));
@@ -284,7 +307,7 @@ public class RecipeGUI extends JPanel{
 
 
                 filterPanel.add(filterLabel, BorderLayout.NORTH);
-    			filterPanel.add(filterBox, BorderLayout.CENTER);
+                filterPanel.add(filterBox, BorderLayout.CENTER);
                 filterPanel.add(listLabel, BorderLayout.SOUTH);
 
                 listPanel.add(filterPanel, BorderLayout.NORTH);
