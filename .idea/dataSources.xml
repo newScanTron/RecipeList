@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="DataSourceManagerImpl" format="xml" hash="99824488">
+=======
+  <component name="DataSourceManagerImpl" format="xml" hash="3392408431">
+>>>>>>> FETCH_HEAD
 =======
   <component name="DataSourceManagerImpl" format="xml" hash="3392408431">
 >>>>>>> FETCH_HEAD
@@ -11,7 +15,12 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <user-name>root</user-name>
+=======
+      <user-name>newScanTron</user-name>
+      <user-password>dfe9dfd8df8bdffedffedf99dfd8dfdadfc2df99dfd8df98df9bdf9e</user-password>
+>>>>>>> FETCH_HEAD
 =======
       <user-name>newScanTron</user-name>
       <user-password>dfe9dfd8df8bdffedffedf99dfd8dfdadfc2df99dfd8df98df9bdf9e</user-password>
