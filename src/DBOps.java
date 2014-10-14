@@ -1,23 +1,21 @@
-import com.mysql.jdbc.*;
-
 import java.sql.*;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Created by newScanTron on 10/9/2014.
  */
-public final class DBOps {
+public class DBOps {
     static Connection conn = null;
     static PreparedStatement pst = null;
-    static ResultSet resultSet = null;
-    static ResultSet workingSet = null;
+    ResultSet resultSet = null;
+    ResultSet workingSet = null;
+    Recipe[] foundRecipes = {};
+    int found_id = 0;
     //this connect method is really just to check for a connections
     //if thats something you want to do before you start manipulating
     //the database
-    public static void connect()
+    public void connect()
     {
 
         try {
@@ -29,9 +27,8 @@ public final class DBOps {
             System.out.println("we hate you so much and cant find the driver");
         }
         try {
-
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/recipes?allowMultiQueries=true"
-                    , "root", "");
+                    , "newScanTron", "Cr!TT3rph3r214");
             // Do something with the Connection
             //doing something with this connection
 
@@ -40,7 +37,6 @@ public final class DBOps {
             System.out.println("SQLException: " + ex.getMessage());
             System.out.println("SQLState: " + ex.getSQLState());
             System.out.println("VendorError: " + ex.getErrorCode());
-
         } finally {
             // going to close all these things but in this program is probable less
             //necessary cus this thing is using basically no memory.
@@ -62,7 +58,37 @@ public final class DBOps {
     }
 
     //sort of obvious this method searches the recipes
-    public static ResultSet searchRecipe(String name) throws SQLException
+    public Recipe[] searchAll(String name)
+    {
+        resultSet = searchIngredients(name);
+        //
+        resultSet = searchRecipe(name);
+        //now to tryp to populate a new recipe
+        try
+        {
+            int search_id_int = resultSet.getInt(1);
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        String search_id_name = null;
+        try
+        {
+            search_id_name = resultSet.getString(2);
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        Recipe foundRecipe = new Recipe(search_id_name, true);
+        Recipe[] newRecipes = {foundRecipe};
+        foundRecipes = newRecipes;
+        //im not sure this is going to work
+        resultSet = searchTag(name);
+
+        return foundRecipes;
+    }
+
+    public ResultSet searchRecipe(String name)
     {
 
         try {
@@ -70,6 +96,7 @@ public final class DBOps {
             String statement = "SELECT * FROM recipes.recipes WHERE name = \"" + name + "\"";
             pst = conn.prepareStatement(statement);
             resultSet = pst.executeQuery();
+
             return resultSet;
         }
         catch (SQLException error) {
@@ -79,7 +106,7 @@ public final class DBOps {
        return resultSet;
     }
     //method to search by tag
-    public static ResultSet searchTag(String name)
+    public ResultSet searchTag(String name)
     {
         try {
 
@@ -94,24 +121,25 @@ public final class DBOps {
         return resultSet;
     }
     //one last search method to look through the ingreients
-    public static ResultSet searchIngredients(String name)
+    public ResultSet searchIngredients(String name)
     {
-        try {
+        try
+        {
             String statement = "SELECT * FROM recipes.ingredients WHERE name = \"" + name + "\"";
             pst = conn.prepareStatement(statement);
             resultSet = pst.executeQuery();
             return resultSet;
         }
-        catch (SQLException error) {
+        catch (SQLException error)
+        {
             System.out.println("prepared statement failed " + error.getMessage());
         }
         return resultSet;
     }
     //this method is to add recipes right now with all th stuff later hope to just
     //add recipe object
-    public static int addRecipe(Recipe recipe)
+    public int addRecipe(Recipe recipe)
     {
-        int returnID = -1;
         Set<String> set = new HashSet<String>();
         for (int i = recipe.directions.length; i < recipe.directions.length; i -- )
         {
@@ -126,6 +154,10 @@ public final class DBOps {
             pst.execute();
             //a while loop to add all the directions to the direction database
             //no real reason for a while over for just is
+            resultSet = searchRecipe(recipe.name);
+            found_id = resultSet.getInt(1);
+            System.out.println("resutl set:" + found_id);
+
             int addCount = 0;
             String[] directions = recipe.directions;
             while (addCount < directions.length)
@@ -141,6 +173,19 @@ public final class DBOps {
             //a for loop to add all the ingredients
             for (Ingredient ingredient: recipe.getIngredients())
             {
+                try
+                {
+
+                    resultSet = searchIngredients(ingredient.name);
+                    if (resultSet != null)
+                    System.out.println(resultSet.getInt(1));
+                }
+                catch (Exception e)
+                {
+                    System.out.println("this is the lamest exception handeling ever " );
+                    e.printStackTrace();
+                }
+
                 stmnt = "INSERT ingredients SET name=\"" + ingredient.name + "\"";
                 pst = conn.prepareStatement(stmnt);
                 pst.execute();
@@ -180,20 +225,9 @@ public final class DBOps {
         {
             System.out.print("we have an SQLException " + ex.getMessage());
         }
-
-        ResultSet rs = null;
-        int t = -1;
-        try {
-            rs = searchRecipe(recipe.name);
-            t = rs.getInt(1);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-        return t;
+        return found_id;
     }
-    public static void delete(int id)
+    public void delete(int id)
     {
         String stmnt = "DELETE FROM recipes.recipes WHERE id =\" " + id +  "\"";
         try

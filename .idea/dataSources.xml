@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3793227468">
+<<<<<<< HEAD
+  <component name="DataSourceManagerImpl" format="xml" hash="99824488">
+=======
+  <component name="DataSourceManagerImpl" format="xml" hash="3392408431">
+>>>>>>> FETCH_HEAD
     <data-source source="LOCAL" name="MySQL - @localhost" uuid="80a49ca0-ebb8-4b32-aa62-a70abf432c0e">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
-      <user-name>aaronc</user-name>
-      <user-password>dfd9dfdbdfc6dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+<<<<<<< HEAD
+      <user-name>root</user-name>
+=======
+      <user-name>newScanTron</user-name>
+      <user-password>dfe9dfd8df8bdffedffedf99dfd8dfdadfc2df99dfd8df98df9bdf9e</user-password>
+>>>>>>> FETCH_HEAD
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />

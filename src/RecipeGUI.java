@@ -361,6 +361,7 @@ public class RecipeGUI extends JPanel{
             panel1.add(dataPane, BorderLayout.EAST);
         }
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
+
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables

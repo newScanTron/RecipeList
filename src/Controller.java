@@ -1,10 +1,8 @@
 /**
  * Created by newScanTron on 9/24/2014.
  */
+import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.sql.*;
-import java.util.HashSet;
-import java.util.Set;
 public final class Controller {
 
     static int temporaryIdCounter = 0;
@@ -51,14 +49,8 @@ public final class Controller {
 
         db.connect();
         db.delete(id);
-
-
-
-
         // TODO: Also delete recipe from database
-
     }
-
     public static void gatherRecipe(AddRecipeGUI rd) {
         // Retrieving name
         String _name = rd.nameField.getText();
@@ -96,10 +88,7 @@ public final class Controller {
             Recipe newRecipe = new Recipe(_name, ingArray, _directions, _tags);
 
             addRecipe(newRecipe);
-
         }
-
-
     }
 
     public static void searchRecipe(String searchInput) {
@@ -124,8 +113,8 @@ public final class Controller {
                 new Recipe("Search Result 3",true),          // Placeholder for search results
                 new Recipe("Search Result 4",true)
         };
-
-        currentRecipes.recipes = results;
+        //
+        currentRecipes.recipes = db.searchAll(searchInput);
 
     }
 
@@ -236,8 +225,6 @@ public final class Controller {
 
         Driver.displayFrame.setLocationRelativeTo(null);
         Driver.displayFrame.setVisible(true);
-
-
 
     }
 
