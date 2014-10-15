@@ -21,7 +21,6 @@ public class Ingredient {
 
     public void setName(String _name){
         name = _name;
-        System.out.println("this is your name");
 
     }
 

@@ -22,24 +22,22 @@ public class RecipeGUI extends JPanel{
 
     public RecipeGUI() {
 
-        Controller.testController();
-
         initComponents();
         add(panel1);
+        recipeListBox.updateUI();
         recipeListBox.setSelectedIndex(0);
         recipeListBox.getListSelectionListeners()[0].valueChanged(new ListSelectionEvent(this,0,0,true));
         recipeListBox.requestFocus();
         setBackground(panelColor);
 
-        // Try unselecting the filterBox by default
     }
-    private void createUIComponents() {
-        // TODO: add custom component creation code here
-    }
+
+    private void createUIComponents() {}
 
     private void showDialog(String message,String title, int type) {
         JOptionPane.showMessageDialog(this,message,title,type);
     }
+
     private int showOption(String message, String title, int optionType, int messageType) {
 
         int n = JOptionPane.showOptionDialog(this,
@@ -52,6 +50,7 @@ public class RecipeGUI extends JPanel{
                 0);
         return n;
     }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Adam Clemons
@@ -103,7 +102,7 @@ public class RecipeGUI extends JPanel{
 
                     if (showOption("Edit recipe? Original recipe will be deleted.","Edit recipe?",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE) == 0) {
 
-                        //System.out.println("Editing Recipe...");
+
                         int editIndex = recipeListBox.getSelectedIndex();
                         String editName = recipeListBox.getSelectedValue();
                         Recipe oldRecipe = Controller.currentRecipes.findByName(editName);
@@ -135,7 +134,7 @@ public class RecipeGUI extends JPanel{
                         }
                         recipeListBox.updateUI();  // Refreshes UI
 
-                        //System.out.println("Deleting: " + deleteName);
+
                     }
                 }
 
@@ -174,13 +173,12 @@ public class RecipeGUI extends JPanel{
                 if (e.getValueIsAdjusting()) {
                     String name = recipeListBox.getSelectedValue();
                     Recipe selected = Controller.currentRecipes.findByName(name);
-                    //System.out.println("Selected: " + selected.name);
 
                     directionsTextArea.setText("Directions: \n");
                     ingredientsTextArea.setText("Ingredients: \n");
                     tagsTextArea.setText("Tags: ");
 
-                    titleLabel.setText(selected.name + " " + selected.id);
+                    titleLabel.setText(selected.name.toUpperCase());
 
                     for (int i = 0; i < selected.directions.length; i++) {
                         directionsTextArea.append(selected.directions[i] + "\n");
@@ -294,7 +292,7 @@ public class RecipeGUI extends JPanel{
                     public void actionPerformed(ActionEvent e) {
 
                         String searchText = filterBox.getSelectedItem().toString();
-                        Controller.searchRecipe(searchField.getText());
+                        Controller.searchRecipe(filterBox.getSelectedItem().toString());
                         listModel.clear();
                         recipeListBox.updateUI();
 

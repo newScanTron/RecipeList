@@ -21,6 +21,7 @@ public class Driver {
 		displayFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		displayFrame.setResizable(false);
 		displayFrame.setLayout(new BorderLayout());
+        Controller.testController();
 		
 		newPanel = new RecipeGUI();
 		
@@ -33,5 +34,6 @@ public class Driver {
 		displayFrame.setLocationRelativeTo(null);
 		
 		displayFrame.setVisible(true); // Allows us to see the Frame
+
 	}
 }

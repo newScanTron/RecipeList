@@ -7,8 +7,10 @@ public final class Controller {
 
     static int temporaryIdCounter = 0;
 
-    static DBOps db;
+    static DBOps db = new DBOps();
+
     public static recipeList currentRecipes = new recipeList();
+    public static RecipeDB recipeDB = new RecipeDB();
 
     public static void Controller() {
 
@@ -16,55 +18,39 @@ public final class Controller {
 
     public static void testController() {
 
-        if (currentRecipes.recipes.length == 0) {
+        searchRecipe("");
 
-            currentRecipes = new recipeList(new Recipe[]{
-                    new Recipe("Burrito", true),
-                    new Recipe("Ramen", true),
-                    new Recipe("Brownie", true),                        // This is where the current recipe objects used in the JList are stored
-                    new Recipe("Pizza", true),
-                    new Recipe("Taco", true),
-                    new Recipe("Cereal", true),
-                    new Recipe("Waffles", true)
-            });
-
-            for (int i = 0; i < currentRecipes.recipes.length; i++) {
-
-                currentRecipes.recipes[i].id = i;
-
-            }
-        }
     }
 
 
-    public static Recipe addRecipe(Recipe newRecipe) {
+    public static void addRecipe(Recipe newRecipe) {
 
-        //DBOps db = new DBOps();
         //db.connect();
-        //int _id = db.addRecipe(newRecipe);
-        //System.out.println("new id: " + _id);
-        //newRecipe.id = _id;
+        //db.addRecipe(newRecipe);
+
+        ////// BACKUP ////////
+        int _id = recipeDB.add(newRecipe);
+        newRecipe.id = _id;
+        //////////////////////
+
         currentRecipes.add(newRecipe);
-
-
-        return null;
 
     }
 
     public static void deleteRecipeByID(int id) {
 
-        System.out.println("deleteRecipeByID: " + currentRecipes.findIndexByID(id));
+
 
         currentRecipes.remove(currentRecipes.findIndexByID(id));
 
+        ////// BACKUP ////////
+        recipeDB.removeByID(id);
+        //////////////////////
 
-                //db.connect();
-                //db.delete(id);
 
-        db.connect();
-        db.delete(id);
+        //db.connect();
+        //db.delete(id);
 
-        // TODO: Also delete recipe from database
     }
     public static void gatherRecipe(AddRecipeGUI rd) {
 
@@ -87,8 +73,6 @@ public final class Controller {
         if (!rd.ingName9.getText().trim().equals("")) {ingList.add(new Ingredient(rd.ingName9.getText(),rd.ingAmount9.getText(),rd.ingUnit9.getText()));}
         if (!rd.ingName10.getText().trim().equals("")) {ingList.add(new Ingredient(rd.ingName10.getText(),rd.ingAmount10.getText(),rd.ingUnit10.getText()));}
 
-        //System.out.println("ArrayList Size: "  + ingList.size());
-
         ingList.trimToSize();
         Ingredient[] ingArray = new Ingredient[ingList.size()];
 
@@ -106,32 +90,19 @@ public final class Controller {
     }
 
     public static void searchRecipe(String searchInput) {
-/*
-        try {
-            testResults = DBOps.searchRecipe(searchInput);
-            System.out.println("Test: " + testResults.getString(0));
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-*/
-        //TODO: Search function that compiles all recipes in database containing searchInput into an array of recipes
 
         searchInput = searchInput.trim().toLowerCase();
 
-        Recipe[] results = new Recipe[] {
-                new Recipe("Search Result 1",true),
-                new Recipe("Search Result 2",true),
-                new Recipe("Search Result 3",true),          // Placeholder for search results
-                new Recipe("Search Result 4",true)
-        };
+        ////// BACKUP ////////
+        currentRecipes.recipes = recipeDB.search(searchInput);
+        //////////////////////
 
 
-        if (!searchInput.isEmpty()) {
-            //currentRecipes.recipes = db.searchAll(searchInput);
-        }
 
-        //
-        currentRecipes.recipes = db.searchAll(searchInput);
+
+
+
+        //currentRecipes.recipes = db.searchAll(searchInput);
 
 
     }
@@ -154,7 +125,6 @@ public final class Controller {
         if (editting) {
 
             newPanel.edittingID = r.id;
-            System.out.println("openAddWindow: " + newPanel.edittingID);
             newPanel.nameField.setText(r.name);
             String tagString = "";
 
@@ -230,9 +200,7 @@ public final class Controller {
     public static void closeAddWindow(int edittingID) {
 
         if (edittingID != -1) {
-            System.out.println("Call Before");
             deleteRecipeByID(edittingID);
-            System.out.println("Call After");
         }
 
         Driver.newPanel = new RecipeGUI();

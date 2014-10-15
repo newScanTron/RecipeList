@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0d24d95-f37f-4cc2-99e0-f044593e9750" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller.java" afterPath="$PROJECT_DIR$/src/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBOps.java" afterPath="$PROJECT_DIR$/src/DBOps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1b8cf838-ed93-4752-ad8b-8841a9bd27b1" name="Default" comment="" />
     <ignored path="RecipeList.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,230 +23,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-=======
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-=======
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file leaf-file-name="DBOps.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DBOps.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DBOps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5265957" vertical-offset="3111" max-vertical-offset="3675">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3088" max-vertical-offset="3675">
               <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding>
-                <marker date="1413239020000" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1413239020000" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-                <marker date="1413239020000" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-                <marker date="1413239020000" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-                <marker date="1413239020000" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-                <marker date="1413239020000" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413239020000" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-                <marker date="1413239020000" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-                <marker date="1413239020000" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413239020000" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413239020000" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-                <marker date="1413239020000" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-                <marker date="1413239020000" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-                <marker date="1413239020000" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413239020000" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-                <marker date="1413239020000" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-                <marker date="1413239020000" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-                <marker date="1413239020000" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413239020000" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-                <marker date="1413239020000" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-                <marker date="1413239020000" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-                <marker date="1413239020000" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413239020000" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
+                <marker date="1413400031000" expanded="true" signature="2974:3033" placeholder="SELECT * FRO..recipes..." />
+                <marker date="1413400031000" expanded="true" signature="3462:3518" placeholder="SELECT * FRO..tags..." />
+                <marker date="1413400031000" expanded="true" signature="3991:4054" placeholder="SELECT * FRO..ingredients..." />
+                <marker date="1413400031000" expanded="true" signature="4862:4948" placeholder="INSERT recip..." />
+                <marker date="1413400031000" expanded="true" signature="5489:5692" placeholder="INSERT direc..." />
+                <marker date="1413400031000" expanded="true" signature="5632:5691" placeholder="SELECT id FR..recipes..." />
+                <marker date="1413400031000" expanded="true" signature="6410:6465" placeholder="INSERT ingre..." />
+                <marker date="1413400031000" expanded="true" signature="6652:6876" placeholder="INSERT recip..." />
+                <marker date="1413400031000" expanded="true" signature="6704:6771" placeholder="SELECT id FR..ingredients..." />
+                <marker date="1413400031000" expanded="true" signature="6816:6875" placeholder="SELECT id FR..recipes..." />
+                <marker date="1413400031000" expanded="true" signature="7083:7158" placeholder="INSERT value..." />
+                <marker date="1413400031000" expanded="true" signature="7188:7266" placeholder="INSERT unit_..." />
+                <marker date="1413400031000" expanded="true" signature="7377:7637" placeholder="INSERT ingre..." />
+                <marker date="1413400031000" expanded="true" signature="7424:7491" placeholder="SELECT id FR..ingredients..." />
+                <marker date="1413400031000" expanded="true" signature="7549:7636" placeholder="SELECT id FR..value_of_measurement..." />
+                <marker date="1413400031000" expanded="true" signature="7667:7931" placeholder="INSERT ingre..." />
+                <marker date="1413400031000" expanded="true" signature="7725:7814" placeholder="SELECT id FR..unit_of_measurement..." />
+                <marker date="1413400031000" expanded="true" signature="7863:7930" placeholder="SELECT id FR..ingredients..." />
+                <marker date="1413400031000" expanded="true" signature="8180:8223" placeholder="INSERT tags ..." />
+                <marker date="1413400031000" expanded="true" signature="8410:8608" placeholder="INSERT recip..." />
+                <marker date="1413400031000" expanded="true" signature="8448:8503" placeholder="SELECT id FR..tags..." />
+                <marker date="1413400031000" expanded="true" signature="8548:8607" placeholder="SELECT id FR..recipes..." />
+                <marker date="1413400031000" expanded="true" signature="8932:8986" placeholder="DELETE FROM ..." />
               </folding>
-=======
-      <file leaf-file-name="AddRecipeGUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-=======
-      <file leaf-file-name="AddRecipeGUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
->>>>>>> FETCH_HEAD
-            <state vertical-scroll-proportion="0.0" vertical-offset="2312" max-vertical-offset="5559">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBOps.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DBOps.java">
+      <file leaf-file-name="RecipeDB.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RecipeDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1212121" vertical-offset="714" max-vertical-offset="4199">
-              <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.5053192" vertical-offset="0" max-vertical-offset="2055">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1413242510818" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-                <marker date="1413242510818" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-                <marker date="1413242510818" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-                <marker date="1413242510818" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-                <marker date="1413242510818" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-                <marker date="1413242510818" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413242510818" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-                <marker date="1413242510818" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-                <marker date="1413242510818" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413242510818" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413242510818" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-                <marker date="1413242510818" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-                <marker date="1413242510818" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-                <marker date="1413242510818" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413242510818" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-                <marker date="1413242510818" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-                <marker date="1413242510818" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-                <marker date="1413242510818" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-                <marker date="1413242510818" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-                <marker date="1413242510818" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-                <marker date="1413242510818" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-                <marker date="1413242510818" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-                <marker date="1413242510818" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#164#172#0" expanded="true" />
+                <element signature="method#getByName#0;class#RecipeDB#0" expanded="false" />
+                <element signature="method#getByID#0;class#RecipeDB#0" expanded="false" />
+                <element signature="method#add#0;class#RecipeDB#0" expanded="false" />
+                <element signature="method#removeByID#0;class#RecipeDB#0" expanded="false" />
+                <element signature="e#6065#6073#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recipes.ingredients_value" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients_value">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
->>>>>>> FETCH_HEAD
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file leaf-file-name="AddRecipeGUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.8846154" vertical-offset="91" max-vertical-offset="4905">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="13" />
-=======
-=======
->>>>>>> FETCH_HEAD
-      <file leaf-file-name="recipes.tags" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..tags">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipe.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="-70.96154" vertical-offset="0" max-vertical-offset="3315">
-              <caret line="150" column="72" selection-start-line="150" selection-start-column="72" selection-end-line="150" selection-end-column="72" />
-              <folding>
-                <element signature="method#searchRecipe#0;class#Controller#0" expanded="false" />
-              </folding>
-=======
-=======
->>>>>>> FETCH_HEAD
-            <state vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="1496">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
->>>>>>> FETCH_HEAD
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file leaf-file-name="recipeList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-=======
-=======
->>>>>>> FETCH_HEAD
-      <file leaf-file-name="recipes.recipes_to_tags" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes_to_tags">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file leaf-file-name="RecipeGUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6120">
-              <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
-              <folding>
-                <element signature="e#3195#4074#0" expanded="true" />
-                <element signature="e#4063#4064#0" expanded="true" />
-                <element signature="e#4154#5320#0" expanded="true" />
-                <element signature="e#5309#5310#0" expanded="true" />
-                <element signature="e#5860#6165#0" expanded="true" />
-                <element signature="e#6154#6155#0" expanded="true" />
-                <element signature="e#6393#7591#0" expanded="true" />
-                <element signature="e#7580#7581#0" expanded="true" />
-                <element signature="e#11904#12312#0" expanded="true" />
-                <element signature="e#12293#12294#0" expanded="true" />
-              </folding>
-=======
-=======
->>>>>>> FETCH_HEAD
-      <file leaf-file-name="recipes.recipes" pinned="false" current="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes">
-          <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
->>>>>>> FETCH_HEAD
             </state>
           </provider>
         </entry>
@@ -258,49 +78,39 @@
       <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3285">
+              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding />
-=======
-=======
->>>>>>> FETCH_HEAD
-            <state vertical-scroll-proportion="0.0" vertical-offset="1738" max-vertical-offset="2193">
-              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-              <folding>
-                <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-                <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-              </folding>
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecipeGUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
+      <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="-6.8846154" vertical-offset="706" max-vertical-offset="1320">
-              <caret line="63" column="13" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
               <folding />
-=======
-=======
->>>>>>> FETCH_HEAD
-            <state vertical-scroll-proportion="0.0" vertical-offset="1942" max-vertical-offset="5984">
-              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-              <folding>
-                <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-              </folding>
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ingredient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ingredient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="600">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recipeList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/recipeList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1440">
+              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -313,57 +123,27 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/com/intellij/uiDesigner/compiler/FormLayoutUtils.java" />
         <option value="$PROJECT_DIR$/src/Driver.java" />
-        <option value="$PROJECT_DIR$/src/DBOps.java" />
-        <option value="$PROJECT_DIR$/src/Recipe.java" />
-        <option value="dbtable:/45386318/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes" />
+        <option value="$PROJECT_DIR$/src/RecipeGUI.java" />
         <option value="$PROJECT_DIR$/src/Ingredient.java" />
         <option value="$PROJECT_DIR$/src/recipeList.java" />
-        <option value="$PROJECT_DIR$/src/AddRecipeGUI.java" />
-        <option value="$PROJECT_DIR$/src/Controller.java" />
-        <option value="$PROJECT_DIR$/src/RecipeGUI.java" />
-=======
-        <option value="$PROJECT_DIR$/src/recipeList.java" />
-        <option value="$PROJECT_DIR$/src/Recipe.java" />
-        <option value="$PROJECT_DIR$/src/AddRecipeGUI.java" />
-        <option value="$PROJECT_DIR$/src/RecipeGUI.java" />
-=======
-        <option value="$PROJECT_DIR$/src/recipeList.java" />
-        <option value="$PROJECT_DIR$/src/Recipe.java" />
-        <option value="$PROJECT_DIR$/src/AddRecipeGUI.java" />
-        <option value="$PROJECT_DIR$/src/RecipeGUI.java" />
->>>>>>> FETCH_HEAD
-        <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes" />
-        <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..directions" />
-        <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients" />
-        <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..tags" />
-        <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes_to_tags" />
-        <option value="dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients_value" />
-        <option value="$PROJECT_DIR$/src/Driver.java" />
-        <option value="$PROJECT_DIR$/src/Controller.java" />
         <option value="$PROJECT_DIR$/src/DBOps.java" />
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
+        <option value="$PROJECT_DIR$/src/Controller.java" />
+        <option value="$PROJECT_DIR$/src/RecipeDB.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="4" />
-    <option name="width" value="1258" />
-    <option name="height" value="743" />
+    <option name="x" value="4" />
+    <option name="y" value="22" />
+    <option name="width" value="1676" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -394,17 +174,11 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-<<<<<<< HEAD
-<<<<<<< HEAD
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="RecipeList" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -431,16 +205,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipeList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecipeListB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
-=======
-        <subPane />
->>>>>>> FETCH_HEAD
-=======
-        <subPane />
->>>>>>> FETCH_HEAD
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,28 +234,11 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLibs/jgoodies-forms-1.8.0" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/forms_rt" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
-=======
-=======
->>>>>>> FETCH_HEAD
-    <property name="last_opened_file_path" value="$USER_HOME$/.IntelliJIdea13/config/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/" />
-    <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Driver">
     <configuration default="false" name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -499,16 +264,6 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -518,6 +273,33 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -548,17 +330,38 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -617,99 +420,10 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <list size="1">
@@ -733,185 +447,49 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d0d24d95-f37f-4cc2-99e0-f044593e9750" name="Default" comment="" />
-      <created>1413156325396</created>
-      <updated>1413156325396</updated>
-      <workItem from="1413156325867" duration="72000" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <workItem from="1413156401313" duration="6575000" />
-      <workItem from="1413163054216" duration="132000" />
-      <workItem from="1413163190579" duration="3589000" />
-      <workItem from="1413222471438" duration="10592000" />
-      <workItem from="1413237602433" duration="3933000" />
-      <workItem from="1413322062972" duration="277000" />
-      <workItem from="1413322347626" duration="1006000" />
-      <workItem from="1413323357096" duration="4248000" />
-=======
-=======
->>>>>>> FETCH_HEAD
-      <workItem from="1413156401313" duration="3311000" />
-      <workItem from="1413159820091" duration="382000" />
-      <workItem from="1413160226728" duration="83000" />
-      <workItem from="1413160362538" duration="24000" />
-      <workItem from="1413161209961" duration="2364000" />
-      <workItem from="1413163655187" duration="1854000" />
-      <workItem from="1413165694440" duration="1212000" />
-      <workItem from="1413167014752" duration="8816000" />
-      <workItem from="1413237666777" duration="4919000" />
+      <changelist id="1b8cf838-ed93-4752-ad8b-8841a9bd27b1" name="Default" comment="" />
+      <created>1413393007435</created>
+      <updated>1413393007435</updated>
+      <workItem from="1413393006977" duration="6976000" />
+      <workItem from="1413400297495" duration="233000" />
     </task>
-    <task id="LOCAL-00001" summary="my DBOps is added&#10;">
-      <created>1413161369372</created>
-      <updated>1413161369372</updated>
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-    </task>
-    <task id="LOCAL-00002" summary="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables">
-      <created>1413226162426</created>
-      <updated>1413226162426</updated>
-    </task>
-    <task id="LOCAL-00003" summary="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables">
-      <created>1413226235735</created>
-      <updated>1413226235735</updated>
-    </task>
-    <task id="LOCAL-00004" summary="more ops stuff&#10;">
-      <created>1413239705813</created>
-      <updated>1413239705813</updated>
-    </task>
-    <task id="LOCAL-00005" summary="conecting controller to dbOps">
-      <created>1413240542881</created>
-      <updated>1413240542881</updated>
-    </task>
-=======
-    </task>
-    <task id="LOCAL-00002" summary="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables">
-      <created>1413226162426</created>
-      <updated>1413226162426</updated>
-    </task>
-    <task id="LOCAL-00003" summary="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables">
-      <created>1413226235735</created>
-      <updated>1413226235735</updated>
-    </task>
-    <task id="LOCAL-00004" summary="more ops stuff&#10;">
-      <created>1413239705813</created>
-      <updated>1413239705813</updated>
-    </task>
-    <task id="LOCAL-00005" summary="conecting controller to dbOps">
-      <created>1413240542881</created>
-      <updated>1413240542881</updated>
-    </task>
->>>>>>> FETCH_HEAD
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="30424000" />
+    <option name="totallyTimeSpent" value="7209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1676" height="1028" extended-state="6" />
-=======
-    <option name="totallyTimeSpent" value="23037000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="8" y="4" width="1258" height="743" extended-state="0" />
->>>>>>> FETCH_HEAD
-=======
-    <option name="totallyTimeSpent" value="23037000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="8" y="4" width="1258" height="743" extended-state="0" />
->>>>>>> FETCH_HEAD
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23317014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-=======
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16887417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
->>>>>>> FETCH_HEAD
-=======
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16887417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
->>>>>>> FETCH_HEAD
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2190016" sideWeight="0.4892384" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34028894" sideWeight="0.49917218" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15149006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44927537" sideWeight="0.5107616" order="2" side_tool="false" content_ui="tabs" />
->>>>>>> FETCH_HEAD
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15149006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44927537" sideWeight="0.5107616" order="2" side_tool="false" content_ui="tabs" />
->>>>>>> FETCH_HEAD
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16887417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2190016" sideWeight="0.4892384" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15149006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2190016" sideWeight="0.5107616" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34028894" sideWeight="0.49917218" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -928,1438 +506,208 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="my DBOps is added&#10;" />
-    <MESSAGE value="delete should work to remove the recipes from the recipe table, needs some more work to delete all the associations in the other tables" />
-    <MESSAGE value="more ops stuff&#10;" />
-    <MESSAGE value="conecting controller to dbOps" />
-    <option name="LAST_COMMIT_MESSAGE" value="conecting controller to dbOps" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="5025">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-=======
     <entry file="file://$PROJECT_DIR$/src/DBOps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="3298">
-          <caret line="184" column="32" selection-start-line="184" selection-start-column="32" selection-end-line="184" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3705">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1413242510818" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413242510818" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-            <marker date="1413242510818" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-            <marker date="1413242510818" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-            <marker date="1413242510818" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-            <marker date="1413242510818" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-            <marker date="1413242510818" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
+            <marker date="1413400031000" expanded="true" signature="2974:3033" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="3462:3518" placeholder="SELECT * FRO..tags..." />
+            <marker date="1413400031000" expanded="true" signature="3991:4054" placeholder="SELECT * FRO..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="4862:4948" placeholder="INSERT recip..." />
+            <marker date="1413400031000" expanded="true" signature="5489:5692" placeholder="INSERT direc..." />
+            <marker date="1413400031000" expanded="true" signature="5632:5691" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="6410:6465" placeholder="INSERT ingre..." />
+            <marker date="1413400031000" expanded="true" signature="6652:6876" placeholder="INSERT recip..." />
+            <marker date="1413400031000" expanded="true" signature="6704:6771" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="6816:6875" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="7083:7158" placeholder="INSERT value..." />
+            <marker date="1413400031000" expanded="true" signature="7188:7266" placeholder="INSERT unit_..." />
+            <marker date="1413400031000" expanded="true" signature="7377:7637" placeholder="INSERT ingre..." />
+            <marker date="1413400031000" expanded="true" signature="7424:7491" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="7549:7636" placeholder="SELECT id FR..value_of_measurement..." />
+            <marker date="1413400031000" expanded="true" signature="7667:7931" placeholder="INSERT ingre..." />
+            <marker date="1413400031000" expanded="true" signature="7725:7814" placeholder="SELECT id FR..unit_of_measurement..." />
+            <marker date="1413400031000" expanded="true" signature="7863:7930" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="8180:8223" placeholder="INSERT tags ..." />
+            <marker date="1413400031000" expanded="true" signature="8410:8608" placeholder="INSERT recip..." />
+            <marker date="1413400031000" expanded="true" signature="8448:8503" placeholder="SELECT id FR..tags..." />
+            <marker date="1413400031000" expanded="true" signature="8548:8607" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="8932:8986" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="3672">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
->>>>>>> FETCH_HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="3285">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="3555">
-          <caret line="113" column="10" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
-          <folding>
-            <element signature="method#searchRecipe#0;class#Controller#0" expanded="false" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
->>>>>>> FETCH_HEAD
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1395">
-          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
->>>>>>> FETCH_HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="675">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5580" max-vertical-offset="5790">
-          <caret line="381" column="33" selection-start-line="381" selection-start-column="33" selection-end-line="381" selection-end-column="33" />
-          <folding>
-            <element signature="e#3195#4074#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4154#5320#0" expanded="true" />
-            <element signature="e#5309#5310#0" expanded="true" />
-            <element signature="e#5860#6165#0" expanded="true" />
-            <element signature="e#6154#6155#0" expanded="true" />
-            <element signature="e#6393#7591#0" expanded="true" />
-            <element signature="e#7580#7581#0" expanded="true" />
-            <element signature="e#11904#12312#0" expanded="true" />
-            <element signature="e#12293#12294#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="630">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="600">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1380">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="714">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="14382">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="5025">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="5627">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="3765">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="method#searchRecipe#0;class#Controller#0" expanded="false" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3672">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
->>>>>>> FETCH_HEAD
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/recipeList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1440">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="2400" max-vertical-offset="5925">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-          <folding>
-            <element signature="e#3195#4074#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4154#5320#0" expanded="true" />
-            <element signature="e#5309#5310#0" expanded="true" />
-            <element signature="e#5860#6165#0" expanded="true" />
-            <element signature="e#6154#6155#0" expanded="true" />
-            <element signature="e#6393#7591#0" expanded="true" />
-            <element signature="e#7580#7581#0" expanded="true" />
-            <element signature="e#11904#12312#0" expanded="true" />
-            <element signature="e#12293#12294#0" expanded="true" />
-          </folding>
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="714">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="13328">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="5661">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
->>>>>>> FETCH_HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3672">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="630">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1380">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="645">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/DBOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="772" max-vertical-offset="2910">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <marker date="1413239020000" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413239020000" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-            <marker date="1413239020000" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-            <marker date="1413239020000" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-            <marker date="1413239020000" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-            <marker date="1413239020000" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-            <marker date="1413239020000" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-            <marker date="1413239020000" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-            <marker date="1413239020000" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413239020000" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-            <marker date="1413239020000" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413239020000" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-            <marker date="1413239020000" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-            <marker date="1413239020000" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-            <marker date="1413239020000" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="4920">
-          <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
-=======
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="12427">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="5661">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3672">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="2325">
-          <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
-          <folding>
-            <element signature="method#searchRecipe#0;class#Controller#0" expanded="false" />
-          </folding>
-=======
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="5882">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="11237">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="5576">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
->>>>>>> FETCH_HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1395">
-          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="3570">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1309">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="5535">
-          <caret line="154" column="44" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="44" />
-          <folding>
-            <element signature="e#3195#4074#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4154#5320#0" expanded="true" />
-            <element signature="e#5309#5310#0" expanded="true" />
-            <element signature="e#5860#6165#0" expanded="true" />
-            <element signature="e#6154#6155#0" expanded="true" />
-            <element signature="e#6393#7591#0" expanded="true" />
-            <element signature="e#7580#7581#0" expanded="true" />
-            <element signature="e#11904#12312#0" expanded="true" />
-            <element signature="e#12293#12294#0" expanded="true" />
-          </folding>
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1513">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
->>>>>>> FETCH_HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="630">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="17714">
-          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/intellij/uiDesigner/compiler/FormLayoutUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12166667" vertical-offset="2" max-vertical-offset="795">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/beans/PropertyChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6415094" vertical-offset="0" max-vertical-offset="459">
-          <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.IntelliJIdea13/config/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/com/mysql/jdbc/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7687688" vertical-offset="1937" max-vertical-offset="2295">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.IntelliJIdea13/config/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/com/mysql/jdbc/ResultSetImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.24" vertical-offset="9893" max-vertical-offset="10251">
-          <caret line="598" column="0" selection-start-line="598" selection-start-column="0" selection-end-line="598" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..directions">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients_value">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..tags">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1395">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="5525">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/DBOps.java">
->>>>>>> FETCH_HEAD
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="3298">
-          <caret line="184" column="32" selection-start-line="184" selection-start-column="32" selection-end-line="184" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1413242510818" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413242510818" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-            <marker date="1413242510818" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-            <marker date="1413242510818" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-            <marker date="1413242510818" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-            <marker date="1413242510818" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-            <marker date="1413242510818" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="3672">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11055">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="810">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="714">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
->>>>>>> FETCH_HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="14382">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="5627">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3465">
-          <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-          <folding>
-            <element signature="method#searchRecipe#0;class#Controller#0" expanded="false" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3672">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
->>>>>>> FETCH_HEAD
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="5310">
-          <caret line="132" column="18" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
-          <folding>
-            <element signature="e#3195#4074#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4154#5320#0" expanded="true" />
-            <element signature="e#5309#5310#0" expanded="true" />
-            <element signature="e#5860#6165#0" expanded="true" />
-            <element signature="e#6154#6155#0" expanded="true" />
-            <element signature="e#6393#7591#0" expanded="true" />
-            <element signature="e#7580#7581#0" expanded="true" />
-            <element signature="e#11904#12312#0" expanded="true" />
-            <element signature="e#12293#12294#0" expanded="true" />
-          </folding>
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="714">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="13328">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="5661">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
->>>>>>> FETCH_HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3672">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
->>>>>>> FETCH_HEAD
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10155">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="12427">
-          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="5661">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/com/intellij/uiDesigner/compiler/FormLayoutUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="810">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="4920">
-          <caret line="78" column="14" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="14" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="3672">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="5882">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1530">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="11237">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="5576">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3465">
-          <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-          <folding>
-            <element signature="method#searchRecipe#0;class#Controller#0" expanded="false" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="3570">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
->>>>>>> FETCH_HEAD
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1395">
-          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1309">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="5310">
-          <caret line="132" column="18" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
-          <folding>
-            <element signature="e#3195#4074#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4154#5320#0" expanded="true" />
-            <element signature="e#5309#5310#0" expanded="true" />
-            <element signature="e#5860#6165#0" expanded="true" />
-            <element signature="e#6154#6155#0" expanded="true" />
-            <element signature="e#6393#7591#0" expanded="true" />
-            <element signature="e#7580#7581#0" expanded="true" />
-            <element signature="e#11904#12312#0" expanded="true" />
-            <element signature="e#12293#12294#0" expanded="true" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
->>>>>>> FETCH_HEAD
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Ingredient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="630">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1395">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1513">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="17714">
-          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/intellij/uiDesigner/compiler/FormLayoutUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12166667" vertical-offset="2" max-vertical-offset="795">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1547">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/beans/PropertyChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6415094" vertical-offset="0" max-vertical-offset="459">
-          <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.IntelliJIdea13/config/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/com/mysql/jdbc/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7687688" vertical-offset="1937" max-vertical-offset="2295">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.IntelliJIdea13/config/jdbc-drivers/mysql-connector-java-5.1.31-bin.jar!/com/mysql/jdbc/ResultSetImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.24" vertical-offset="9893" max-vertical-offset="10251">
-          <caret line="598" column="0" selection-start-line="598" selection-start-column="0" selection-end-line="598" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..directions">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..ingredients_value">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..tags">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.jfd">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/45386318/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2610">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="36900">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/intellij/uiDesigner/compiler/FormLayoutUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33898306" vertical-offset="0" max-vertical-offset="885">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.275" vertical-offset="0" max-vertical-offset="810">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="968" max-vertical-offset="4905">
+          <caret line="83" column="31" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3461537" vertical-offset="184" max-vertical-offset="1320">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3461537" vertical-offset="139" max-vertical-offset="5580">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#RecipeGUI#0;class#RecipeGUI#0" expanded="false" />
+            <element signature="method#showDialog#0;class#RecipeGUI#0" expanded="false" />
+            <element signature="method#showOption#0;class#RecipeGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
+    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="645">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1440">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/recipeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddRecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="-6.8846154" vertical-offset="91" max-vertical-offset="4905">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="13" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1581" max-vertical-offset="5525">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
->>>>>>> FETCH_HEAD
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.8846154" vertical-offset="706" max-vertical-offset="1320">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="13" />
-=======
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes_to_tags">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="600">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
->>>>>>> FETCH_HEAD
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="675">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6120">
-          <caret line="106" column="73" selection-start-line="106" selection-start-column="73" selection-end-line="106" selection-end-column="73" />
-          <folding>
-            <element signature="e#3195#4074#0" expanded="true" />
-            <element signature="e#4063#4064#0" expanded="true" />
-            <element signature="e#4154#5320#0" expanded="true" />
-            <element signature="e#5309#5310#0" expanded="true" />
-            <element signature="e#5860#6165#0" expanded="true" />
-            <element signature="e#6154#6155#0" expanded="true" />
-            <element signature="e#6393#7591#0" expanded="true" />
-            <element signature="e#7580#7581#0" expanded="true" />
-            <element signature="e#11904#12312#0" expanded="true" />
-            <element signature="e#12293#12294#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="1496">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1942" max-vertical-offset="5984">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
->>>>>>> FETCH_HEAD
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="-70.96154" vertical-offset="0" max-vertical-offset="3315">
-          <caret line="150" column="72" selection-start-line="150" selection-start-column="72" selection-end-line="150" selection-end-column="72" />
-          <folding>
-            <element signature="method#searchRecipe#0;class#Controller#0" expanded="false" />
-=======
-        <state vertical-scroll-proportion="0.0" vertical-offset="1823" max-vertical-offset="2193">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
->>>>>>> FETCH_HEAD
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="3285">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DBOps.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="-1.5265957" vertical-offset="3111" max-vertical-offset="3675">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3088" max-vertical-offset="3675">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding>
-            <marker date="1413239020000" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413239020000" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-            <marker date="1413239020000" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-            <marker date="1413239020000" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-            <marker date="1413239020000" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-            <marker date="1413239020000" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-            <marker date="1413239020000" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-            <marker date="1413239020000" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-            <marker date="1413239020000" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413239020000" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-            <marker date="1413239020000" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413239020000" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413239020000" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-            <marker date="1413239020000" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-            <marker date="1413239020000" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-            <marker date="1413239020000" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413239020000" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
-=======
-        <state vertical-scroll-proportion="1.1212121" vertical-offset="714" max-vertical-offset="4199">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1413242510818" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413242510818" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-            <marker date="1413242510818" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-            <marker date="1413242510818" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-            <marker date="1413242510818" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-            <marker date="1413242510818" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-            <marker date="1413242510818" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
->>>>>>> FETCH_HEAD
-          </folding>
-=======
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes_to_tags">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/107465e6/80a49ca0-ebb8-4b32-aa62-a70abf432c0e/recipes..recipes">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="663">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
->>>>>>> FETCH_HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Recipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="1496">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RecipeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1942" max-vertical-offset="5984">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <marker date="1413237626302" expanded="true" signature="1113:15292" placeholder="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-            <marker date="1413237626302" expanded="false" signature="15305:16214" placeholder="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+            <marker date="1413400031000" expanded="true" signature="2974:3033" placeholder="SELECT * FRO..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="3462:3518" placeholder="SELECT * FRO..tags..." />
+            <marker date="1413400031000" expanded="true" signature="3991:4054" placeholder="SELECT * FRO..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="4862:4948" placeholder="INSERT recip..." />
+            <marker date="1413400031000" expanded="true" signature="5489:5692" placeholder="INSERT direc..." />
+            <marker date="1413400031000" expanded="true" signature="5632:5691" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="6410:6465" placeholder="INSERT ingre..." />
+            <marker date="1413400031000" expanded="true" signature="6652:6876" placeholder="INSERT recip..." />
+            <marker date="1413400031000" expanded="true" signature="6704:6771" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="6816:6875" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="7083:7158" placeholder="INSERT value..." />
+            <marker date="1413400031000" expanded="true" signature="7188:7266" placeholder="INSERT unit_..." />
+            <marker date="1413400031000" expanded="true" signature="7377:7637" placeholder="INSERT ingre..." />
+            <marker date="1413400031000" expanded="true" signature="7424:7491" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="7549:7636" placeholder="SELECT id FR..value_of_measurement..." />
+            <marker date="1413400031000" expanded="true" signature="7667:7931" placeholder="INSERT ingre..." />
+            <marker date="1413400031000" expanded="true" signature="7725:7814" placeholder="SELECT id FR..unit_of_measurement..." />
+            <marker date="1413400031000" expanded="true" signature="7863:7930" placeholder="SELECT id FR..ingredients..." />
+            <marker date="1413400031000" expanded="true" signature="8180:8223" placeholder="INSERT tags ..." />
+            <marker date="1413400031000" expanded="true" signature="8410:8608" placeholder="INSERT recip..." />
+            <marker date="1413400031000" expanded="true" signature="8448:8503" placeholder="SELECT id FR..tags..." />
+            <marker date="1413400031000" expanded="true" signature="8548:8607" placeholder="SELECT id FR..recipes..." />
+            <marker date="1413400031000" expanded="true" signature="8932:8986" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/RecipeDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1823" max-vertical-offset="2193">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5053192" vertical-offset="0" max-vertical-offset="2055">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
           <folding>
-            <element signature="method#openAddWindow#0;class#Controller#0" expanded="false" />
-            <element signature="method#closeAddWindow#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1212121" vertical-offset="714" max-vertical-offset="4199">
-          <caret line="79" column="12" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1413242510818" expanded="true" signature="2996:3055" placeholder="SELECT * FRO..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="3484:3540" placeholder="SELECT * FRO..tags..." />
-            <marker date="1413242510818" expanded="true" signature="4013:4076" placeholder="SELECT * FRO..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="4884:4970" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="5511:5714" placeholder="INSERT direc..." />
-            <marker date="1413242510818" expanded="true" signature="5654:5713" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="6432:6487" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="6674:6898" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="6726:6793" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="6838:6897" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="7105:7180" placeholder="INSERT value..." />
-            <marker date="1413242510818" expanded="true" signature="7210:7288" placeholder="INSERT unit_..." />
-            <marker date="1413242510818" expanded="true" signature="7399:7659" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7446:7513" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="7571:7658" placeholder="SELECT id FR..value_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7689:7953" placeholder="INSERT ingre..." />
-            <marker date="1413242510818" expanded="true" signature="7747:7836" placeholder="SELECT id FR..unit_of_measurement..." />
-            <marker date="1413242510818" expanded="true" signature="7885:7952" placeholder="SELECT id FR..ingredients..." />
-            <marker date="1413242510818" expanded="true" signature="8202:8245" placeholder="INSERT tags ..." />
-            <marker date="1413242510818" expanded="true" signature="8432:8630" placeholder="INSERT recip..." />
-            <marker date="1413242510818" expanded="true" signature="8470:8525" placeholder="SELECT id FR..tags..." />
-            <marker date="1413242510818" expanded="true" signature="8570:8629" placeholder="SELECT id FR..recipes..." />
-            <marker date="1413242510818" expanded="true" signature="8954:9008" placeholder="DELETE FROM ..." />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#164#172#0" expanded="true" />
+            <element signature="method#getByName#0;class#RecipeDB#0" expanded="false" />
+            <element signature="method#getByID#0;class#RecipeDB#0" expanded="false" />
+            <element signature="method#add#0;class#RecipeDB#0" expanded="false" />
+            <element signature="method#removeByID#0;class#RecipeDB#0" expanded="false" />
+            <element signature="e#6065#6073#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2406,7 +754,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2430,15 +778,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <last-edited>mysql-connector-java-5.1</last-edited>
-=======
-          <last-edited>mysql-connector-java-5.1.31-bin</last-edited>
->>>>>>> FETCH_HEAD
-=======
-          <last-edited>mysql-connector-java-5.1.31-bin</last-edited>
->>>>>>> FETCH_HEAD
+          <last-edited>jgoodies-forms-1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="forms_rt">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/forms_rt" />
+      <root url="file://$PROJECT_DIR$/../JavaLibs/forms_rt" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$USER_HOME$/Downloads/forms_rt" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../JavaLibs/forms_rt" recursive="false" />
   </library>
 </component>
